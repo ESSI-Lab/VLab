@@ -1,0 +1,27 @@
+{
+  "inputs": [
+    {
+      "id": "DataObject_1wb6a70",
+      "inputType": "individual",
+      "valueType": "value",
+      "description": "Clumps description",
+      "name": "Input name",
+      "obligation": true,
+      "hasDefault": true,
+      "valueSchema": "url",
+      "defaultValue": "http://www.example.test/ons/dcp171766_224403.pdf",
+      "target": "inputs/test.pdf"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "iDataObject_0loj2kk",
+      "outputType": "individual",
+      "valueType": "value",
+      "description": "Thematic Layers description",
+      "name": "Output Name",
+      "valueSchema": "url",
+      "target": "output.txt"
+    }
+  ]
+}

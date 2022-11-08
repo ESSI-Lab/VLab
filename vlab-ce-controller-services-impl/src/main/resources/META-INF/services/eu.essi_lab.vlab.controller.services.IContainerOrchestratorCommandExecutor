@@ -1,0 +1,2 @@
+eu.essi_lab.vlab.ce.controller.services.kubernetes.KubernetesClient
+eu.essi_lab.vlab.ce.controller.services.ecs.ECSClient

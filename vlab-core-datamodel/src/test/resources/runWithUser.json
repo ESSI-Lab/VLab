@@ -1,0 +1,91 @@
+{
+  "inputs": [
+    {
+      "description": "Clumps description",
+      "name": "Clumps",
+      "id": "DataObject_1wb6a70",
+      "obligation": true,
+      "hasDefault": true,
+      "value": "sftp://test.example.it/vlab/P1/Classification/Clumps.kea",
+      "valueArray": null,
+      "inputType": "individual",
+      "valueType": "value",
+      "valueSchema": "url",
+      "valueArrayInterpretation": null,
+      "valueKey": null,
+      "valueKeyArray": null
+    },
+    {
+      "description": "Thematic Layers description",
+      "name": "Thematic Layers",
+      "id": "DataObject_1ogs25p",
+      "obligation": true,
+      "hasDefault": true,
+      "value": null,
+      "valueArray": [
+        "=sftp://test.example.it/vlab/P1/Thematic/*"
+      ],
+      "inputType": "array",
+      "valueType": "keyValue",
+      "valueSchema": "url",
+      "valueArrayInterpretation": null,
+      "valueKey": null,
+      "valueKeyArray": [
+        {
+          "label": "All variables",
+          "key": ""
+        },
+        {
+          "label": "Dwaterper",
+          "key": "Dwaterper.kea"
+        },
+        {
+          "label": "waterstt",
+          "key": "waterstt.kea"
+        },
+        {
+          "label": "L3Aquatic",
+          "key": "L3Aquatic.kea"
+        }
+      ]
+    },
+    {
+      "description": "Thematic Layers description",
+      "name": "Thematic Layers (Changes)",
+      "id": "DataObject_02zxesd",
+      "obligation": true,
+      "hasDefault": true,
+      "value": null,
+      "valueArray": [
+        "L3Aquatic.kea=sftp://test.example.it/vlab/P2/Thematic/L3Aquatic.kea",
+        "Dwaterper.kea=sftp://test.example.it/vlab/P2/Thematic/Dwaterper.kea"
+      ],
+      "inputType": "array",
+      "valueType": "keyValue",
+      "valueSchema": "url",
+      "valueArrayInterpretation": "replace",
+      "valueKey": null,
+      "valueKeyArray": [
+        {
+          "label": "All variables",
+          "key": ""
+        },
+        {
+          "label": "Dwaterper",
+          "key": "Dwaterper.kea"
+        },
+        {
+          "label": "waterstt",
+          "key": "waterstt.kea"
+        },
+        {
+          "label": "L3Aquatic",
+          "key": "L3Aquatic.kea"
+        }
+      ]
+    }
+  ],
+  "runid": "00e4d805-bcd5-489d-a1ea-e67a8dbd6889",
+  "workflowid": "http://eu.essi_lab.core/test/wfid",
+  "owner": "owner@mail.com"
+}

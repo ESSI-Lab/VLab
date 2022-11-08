@@ -1,0 +1,40 @@
+{
+  "inputs": [
+    {
+      "id": "DataObject_1wb6a70",
+      "inputType": "individual",
+      "valueType": "value",
+      "description": "Clumps description",
+      "name": "Clumps",
+      "obligation": true,
+      "hasDefault": true,
+      "valueSchema": "url",
+      "defaultValue": "sftp://test.example.it/vlab/P1/Classification/Clumps.kea",
+      "target": "P1/Classification/Clumps.kea"
+    },
+    {
+      "id": "DataObject_1ogs25p",
+      "inputType": "array",
+      "valueType": "value",
+      "description": "Thematic Layers description",
+      "name": "Thematic Layers",
+      "obligation": true,
+      "hasDefault": true,
+      "valueSchema": "url",
+      "defaultValueArray": [
+        "sftp://test.example.it/vlab/P1/Thematic/*"
+      ],
+      "target": "P1/Thematic/"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "DataObject_0loj2kk",
+      "outputType": "individual",
+      "valueType": "value",
+      "name": "Output",
+      "valueSchema": "url",
+      "target": "P1/Classification/Clumps.kea"
+    }
+  ]
+}

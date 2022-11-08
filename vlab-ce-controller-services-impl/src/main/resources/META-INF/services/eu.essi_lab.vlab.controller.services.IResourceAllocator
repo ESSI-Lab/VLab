@@ -1,0 +1,2 @@
+eu.essi_lab.vlab.ce.controller.services.KubernetesResourceAllocator
+eu.essi_lab.vlab.ce.controller.services.AWSResourceAllocator

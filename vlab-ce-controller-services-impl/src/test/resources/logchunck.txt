@@ -1,0 +1,417 @@
+2021-10-15T15:10:08.172184007Z Completed 1.5 KiB/972.2 KiB (4.9 KiB/s) with 42 file(s) remaining
+Completed 3.9 KiB/972.2 KiB (8.3 KiB/s) with 42 file(s) remaining
+upload: ../../tmp/3857L3_p2/11/1063/1316.png to s3://folder/id/3857/11/1063/1316.png
+2021-10-15T15:10:08.178752754Z Completed 3.9 KiB/972.2 KiB (8.3 KiB/s) with 41 file(s) remaining
+Completed 5.0 KiB/972.2 KiB (10.5 KiB/s) with 41 file(s) remaining
+upload: ../../tmp/3857L3_p2/10/531/658.png to s3://folder/id/3857/10/531/658.png
+2021-10-15T15:10:08.188057899Z Completed 5.0 KiB/972.2 KiB (10.5 KiB/s) with 40 file(s) remaining
+Completed 5.6 KiB/972.2 KiB (11.5 KiB/s) with 40 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2127/2630.png to s3://folder/id/3857/12/2127/2630.png
+2021-10-15T15:10:08.194773377Z Completed 5.6 KiB/972.2 KiB (11.5 KiB/s) with 39 file(s) remaining
+Completed 7.1 KiB/972.2 KiB (14.5 KiB/s) with 39 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2127/2633.png to s3://folder/id/3857/12/2127/2633.png
+2021-10-15T15:10:08.209934004Z Completed 7.1 KiB/972.2 KiB (14.5 KiB/s) with 38 file(s) remaining
+Completed 15.0 KiB/972.2 KiB (29.6 KiB/s) with 38 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2127/2631.png to s3://folder/id/3857/12/2127/2631.png
+2021-10-15T15:10:08.251416517Z Completed 15.0 KiB/972.2 KiB (29.6 KiB/s) with 37 file(s) remaining
+Completed 39.1 KiB/972.2 KiB (71.2 KiB/s) with 37 file(s) remaining
+upload: ../../tmp/3857L3_p2/11/1064/1315.png to s3://folder/id/3857/11/1064/1315.png
+2021-10-15T15:10:08.265789150Z Completed 39.1 KiB/972.2 KiB (71.2 KiB/s) with 36 file(s) remaining
+Completed 58.1 KiB/972.2 KiB (103.4 KiB/s) with 36 file(s) remaining
+upload: ../../tmp/3857L3_p2/11/1065/1315.png to s3://folder/id/3857/11/1065/1315.png
+2021-10-15T15:10:08.300591903Z Completed 58.1 KiB/972.2 KiB (103.4 KiB/s) with 35 file(s) remaining
+Completed 71.8 KiB/972.2 KiB (119.7 KiB/s) with 35 file(s) remaining
+upload: ../../tmp/3857L3_p2/10/532/657.png to s3://folder/id/3857/10/532/657.png
+2021-10-15T15:10:08.364096009Z Completed 71.8 KiB/972.2 KiB (119.7 KiB/s) with 34 file(s) remaining
+Completed 76.5 KiB/972.2 KiB (115.9 KiB/s) with 34 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2127/2632.png to s3://folder/id/3857/12/2127/2632.png
+2021-10-15T15:10:08.367713733Z Completed 76.5 KiB/972.2 KiB (115.9 KiB/s) with 33 file(s) remaining
+Completed 78.2 KiB/972.2 KiB (118.0 KiB/s) with 33 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2128/2630.png to s3://folder/id/3857/12/2128/2630.png
+2021-10-15T15:10:08.416275474Z Completed 78.2 KiB/972.2 KiB (118.0 KiB/s) with 32 file(s) remaining
+Completed 159.9 KiB/972.2 KiB (223.7 KiB/s) with 32 file(s) remaining
+upload: ../../tmp/3857L3_p2/11/1064/1316.png to s3://folder/id/3857/11/1064/1316.png
+2021-10-15T15:10:08.428243638Z Completed 159.9 KiB/972.2 KiB (223.7 KiB/s) with 31 file(s) remaining
+Completed 237.9 KiB/972.2 KiB (327.4 KiB/s) with 31 file(s) remaining
+upload: ../../tmp/3857L3_p2/11/1065/1316.png to s3://folder/id/3857/11/1065/1316.png
+2021-10-15T15:10:08.451626783Z Completed 237.9 KiB/972.2 KiB (327.4 KiB/s) with 30 file(s) remaining
+Completed 240.4 KiB/972.2 KiB (320.2 KiB/s) with 30 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2129/2630.png to s3://folder/id/3857/12/2129/2630.png
+2021-10-15T15:10:08.476751689Z Completed 240.4 KiB/972.2 KiB (320.2 KiB/s) with 29 file(s) remaining
+Completed 287.1 KiB/972.2 KiB (370.0 KiB/s) with 29 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2128/2632.png to s3://folder/id/3857/12/2128/2632.png
+2021-10-15T15:10:08.515791325Z Completed 287.1 KiB/972.2 KiB (370.0 KiB/s) with 28 file(s) remaining
+Completed 322.9 KiB/972.2 KiB (396.2 KiB/s) with 28 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2129/2631.png to s3://folder/id/3857/12/2129/2631.png
+2021-10-15T15:10:08.556312336Z Completed 322.9 KiB/972.2 KiB (396.2 KiB/s) with 27 file(s) remaining
+Completed 365.9 KiB/972.2 KiB (428.1 KiB/s) with 27 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2128/2633.png to s3://folder/id/3857/12/2128/2633.png
+2021-10-15T15:10:08.559366239Z Completed 365.9 KiB/972.2 KiB (428.1 KiB/s) with 26 file(s) remaining
+Completed 401.5 KiB/972.2 KiB (467.6 KiB/s) with 26 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2128/2631.png to s3://folder/id/3857/12/2128/2631.png
+2021-10-15T15:10:08.621160241Z Completed 401.5 KiB/972.2 KiB (467.6 KiB/s) with 25 file(s) remaining
+Completed 447.7 KiB/972.2 KiB (487.0 KiB/s) with 25 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2130/2632.png to s3://folder/id/3857/12/2130/2632.png
+2021-10-15T15:10:08.625896086Z Completed 447.7 KiB/972.2 KiB (487.0 KiB/s) with 24 file(s) remaining
+Completed 450.0 KiB/972.2 KiB (486.8 KiB/s) with 24 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2130/2630.png to s3://folder/id/3857/12/2130/2630.png
+2021-10-15T15:10:08.646559908Z Completed 450.0 KiB/972.2 KiB (486.8 KiB/s) with 23 file(s) remaining
+Completed 540.1 KiB/972.2 KiB (571.9 KiB/s) with 23 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2129/2632.png to s3://folder/id/3857/12/2129/2632.png
+2021-10-15T15:10:08.702753180Z Completed 540.1 KiB/972.2 KiB (571.9 KiB/s) with 22 file(s) remaining
+Completed 542.1 KiB/972.2 KiB (541.6 KiB/s) with 22 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2131/2630.png to s3://folder/id/3857/12/2131/2630.png
+2021-10-15T15:10:08.707066147Z Completed 542.1 KiB/972.2 KiB (541.6 KiB/s) with 21 file(s) remaining
+Completed 590.9 KiB/972.2 KiB (587.2 KiB/s) with 21 file(s) remaining
+upload: ../../tmp/3857L3_p2/10/532/658.png to s3://folder/id/3857/10/532/658.png
+2021-10-15T15:10:08.735935167Z Completed 590.9 KiB/972.2 KiB (587.2 KiB/s) with 20 file(s) remaining
+Completed 621.2 KiB/972.2 KiB (600.1 KiB/s) with 20 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2130/2631.png to s3://folder/id/3857/12/2130/2631.png
+2021-10-15T15:10:08.743253496Z Completed 621.2 KiB/972.2 KiB (600.1 KiB/s) with 19 file(s) remaining
+Completed 693.4 KiB/972.2 KiB (665.8 KiB/s) with 19 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2130/2633.png to s3://folder/id/3857/12/2130/2633.png
+2021-10-15T15:10:08.762067042Z Completed 693.4 KiB/972.2 KiB (665.8 KiB/s) with 18 file(s) remaining
+Completed 719.7 KiB/972.2 KiB (678.1 KiB/s) with 18 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2131/2631.png to s3://folder/id/3857/12/2131/2631.png
+2021-10-15T15:10:08.773622714Z Completed 719.7 KiB/972.2 KiB (678.1 KiB/s) with 17 file(s) remaining
+Completed 791.9 KiB/972.2 KiB (738.1 KiB/s) with 17 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2129/2633.png to s3://folder/id/3857/12/2129/2633.png
+2021-10-15T15:10:08.816247298Z Completed 791.9 KiB/972.2 KiB (738.1 KiB/s) with 16 file(s) remaining
+Completed 795.1 KiB/972.2 KiB (713.4 KiB/s) with 16 file(s) remaining
+upload: ../../tmp/3857L3_p2/11/1063/1315.png to s3://folder/id/3857/11/1063/1315.png
+2021-10-15T15:10:08.821799269Z Completed 795.1 KiB/972.2 KiB (713.4 KiB/s) with 15 file(s) remaining
+Completed 866.2 KiB/972.2 KiB (773.8 KiB/s) with 15 file(s) remaining
+Completed 914.6 KiB/972.2 KiB (815.9 KiB/s) with 15 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2131/2632.png to s3://folder/id/3857/12/2131/2632.png
+2021-10-15T15:10:08.822797999Z Completed 914.6 KiB/972.2 KiB (815.9 KiB/s) with 14 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2131/2633.png to s3://folder/id/3857/12/2131/2633.png
+2021-10-15T15:10:08.832187406Z Completed 914.6 KiB/972.2 KiB (815.9 KiB/s) with 13 file(s) remaining
+Completed 915.7 KiB/972.2 KiB (809.6 KiB/s) with 13 file(s) remaining
+upload: ../../tmp/3857L3_p2/6/33/41.png to s3://folder/id/3857/6/33/41.png
+2021-10-15T15:10:08.887739950Z Completed 915.7 KiB/972.2 KiB (809.6 KiB/s) with 12 file(s) remaining
+Completed 918.0 KiB/972.2 KiB (773.4 KiB/s) with 12 file(s) remaining
+upload: ../../tmp/3857L3_p2/7/66/82.png to s3://folder/id/3857/7/66/82.png
+2021-10-15T15:10:08.898991962Z Completed 918.0 KiB/972.2 KiB (773.4 KiB/s) with 11 file(s) remaining
+Completed 918.6 KiB/972.2 KiB (766.6 KiB/s) with 11 file(s) remaining
+upload: ../../tmp/3857L3_p2/5/16/20.png to s3://folder/id/3857/5/16/20.png
+2021-10-15T15:10:08.943013149Z Completed 918.6 KiB/972.2 KiB (766.6 KiB/s) with 10 file(s) remaining
+Completed 919.2 KiB/972.2 KiB (740.1 KiB/s) with 10 file(s) remaining
+upload: ../../tmp/3857L3_p2/8/132/164.png to s3://folder/id/3857/8/132/164.png
+2021-10-15T15:10:08.945628092Z Completed 919.2 KiB/972.2 KiB (740.1 KiB/s) with 9 file(s) remaining
+Completed 925.4 KiB/972.2 KiB (743.4 KiB/s) with 9 file(s) remaining
+upload: ../../tmp/3857L3_p2/8/133/164.png to s3://folder/id/3857/8/133/164.png
+2021-10-15T15:10:08.958243993Z Completed 925.4 KiB/972.2 KiB (743.4 KiB/s) with 8 file(s) remaining
+Completed 926.1 KiB/972.2 KiB (736.4 KiB/s) with 8 file(s) remaining
+upload: ../../tmp/3857L3_p2/9/265/329.png to s3://folder/id/3857/9/265/329.png
+2021-10-15T15:10:08.961946595Z Completed 926.1 KiB/972.2 KiB (736.4 KiB/s) with 7 file(s) remaining
+Completed 926.8 KiB/972.2 KiB (734.9 KiB/s) with 7 file(s) remaining
+upload: ../../tmp/3857L3_p2/9/265/328.png to s3://folder/id/3857/9/265/328.png
+2021-10-15T15:10:09.015282325Z Completed 926.8 KiB/972.2 KiB (734.9 KiB/s) with 6 file(s) remaining
+Completed 931.2 KiB/972.2 KiB (709.3 KiB/s) with 6 file(s) remaining
+Completed 943.4 KiB/972.2 KiB (717.8 KiB/s) with 6 file(s) remaining
+upload: ../../tmp/3857L3_p2/leaflet.html to s3://folder/id/3857/leaflet.html
+2021-10-15T15:10:09.015552923Z Completed 943.4 KiB/972.2 KiB (717.8 KiB/s) with 5 file(s) remaining
+upload: ../../tmp/3857L3_p2/googlemaps.html to s3://folder/id/3857/googlemaps.html
+2021-10-15T15:10:09.026349665Z Completed 943.4 KiB/972.2 KiB (717.8 KiB/s) with 4 file(s) remaining
+Completed 958.6 KiB/972.2 KiB (723.1 KiB/s) with 4 file(s) remaining
+upload: ../../tmp/3857L3_p2/9/266/329.png to s3://folder/id/3857/9/266/329.png
+2021-10-15T15:10:09.028206629Z Completed 958.6 KiB/972.2 KiB (723.1 KiB/s) with 3 file(s) remaining
+Completed 963.2 KiB/972.2 KiB (725.6 KiB/s) with 3 file(s) remaining
+upload: ../../tmp/3857L3_p2/9/266/328.png to s3://folder/id/3857/9/266/328.png
+2021-10-15T15:10:09.070356002Z Completed 963.2 KiB/972.2 KiB (725.6 KiB/s) with 2 file(s) remaining
+Completed 971.6 KiB/972.2 KiB (709.4 KiB/s) with 2 file(s) remaining
+upload: ../../tmp/3857L3_p2/openlayers.html to s3://folder/id/3857/openlayers.html
+2021-10-15T15:10:09.084263316Z Completed 971.6 KiB/972.2 KiB (709.4 KiB/s) with 1 file(s) remaining
+Completed 972.2 KiB/972.2 KiB (702.7 KiB/s) with 1 file(s) remaining
+upload: ../../tmp/3857L3_p2/tilemapresource.xml to s3://folder/id/3857/tilemapresource.xml
+2021-10-15T15:10:09.178799410Z [Tiles Generation] Uploading 3857 done Fri Oct 15 15:10:09 UTC 2021
+2021-10-15T15:10:09.180349033Z [Tiles Generation] Uploading 4326 Fri Oct 15 15:10:09 UTC 2021
+2021-10-15T15:10:10.298426858Z Completed 1.1 KiB/750.8 KiB (5.9 KiB/s) with 87 file(s) remaining
+upload: ../../tmp/4326L3_p2/10/531/385.kml to s3://folder/id/4326/10/531/385.kml
+2021-10-15T15:10:10.479245592Z Completed 1.1 KiB/750.8 KiB (5.9 KiB/s) with 86 file(s) remaining
+Completed 4.9 KiB/750.8 KiB (13.3 KiB/s) with 86 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1063/771.png to s3://folder/id/4326/11/1063/771.png
+2021-10-15T15:10:10.575658222Z Completed 4.9 KiB/750.8 KiB (13.3 KiB/s) with 85 file(s) remaining
+Completed 6.4 KiB/750.8 KiB (13.7 KiB/s) with 85 file(s) remaining
+upload: ../../tmp/4326L3_p2/10/532/386.png to s3://folder/id/4326/10/532/386.png
+2021-10-15T15:10:10.584036523Z Completed 6.4 KiB/750.8 KiB (13.7 KiB/s) with 84 file(s) remaining
+Completed 7.5 KiB/750.8 KiB (15.9 KiB/s) with 84 file(s) remaining
+upload: ../../tmp/4326L3_p2/10/532/386.kml to s3://folder/id/4326/10/532/386.kml
+2021-10-15T15:10:10.591971915Z Completed 7.5 KiB/750.8 KiB (15.9 KiB/s) with 83 file(s) remaining
+Completed 8.6 KiB/750.8 KiB (18.1 KiB/s) with 83 file(s) remaining
+Completed 10.2 KiB/750.8 KiB (21.5 KiB/s) with 83 file(s) remaining
+Completed 11.3 KiB/750.8 KiB (23.7 KiB/s) with 83 file(s) remaining
+upload: ../../tmp/4326L3_p2/10/531/386.kml to s3://folder/id/4326/10/531/386.kml
+2021-10-15T15:10:10.593226894Z Completed 11.3 KiB/750.8 KiB (23.7 KiB/s) with 82 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1063/771.kml to s3://folder/id/4326/11/1063/771.kml
+2021-10-15T15:10:10.598397040Z Completed 11.3 KiB/750.8 KiB (23.7 KiB/s) with 81 file(s) remaining
+upload: ../../tmp/4326L3_p2/10/531/385.png to s3://folder/id/4326/10/531/385.png
+2021-10-15T15:10:10.612670822Z Completed 11.3 KiB/750.8 KiB (23.7 KiB/s) with 80 file(s) remaining
+Completed 11.8 KiB/750.8 KiB (24.1 KiB/s) with 80 file(s) remaining
+upload: ../../tmp/4326L3_p2/10/531/386.png to s3://folder/id/4326/10/531/386.png
+2021-10-15T15:10:10.619331983Z Completed 11.8 KiB/750.8 KiB (24.1 KiB/s) with 79 file(s) remaining
+Completed 12.9 KiB/750.8 KiB (25.7 KiB/s) with 79 file(s) remaining
+Completed 13.3 KiB/750.8 KiB (26.4 KiB/s) with 79 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1063/770.kml to s3://folder/id/4326/11/1063/770.kml
+2021-10-15T15:10:10.620185554Z Completed 13.3 KiB/750.8 KiB (26.4 KiB/s) with 78 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1063/770.png to s3://folder/id/4326/11/1063/770.png
+2021-10-15T15:10:10.662381874Z Completed 13.3 KiB/750.8 KiB (26.4 KiB/s) with 77 file(s) remaining
+Completed 14.4 KiB/750.8 KiB (26.2 KiB/s) with 77 file(s) remaining
+upload: ../../tmp/4326L3_p2/10/532/385.kml to s3://folder/id/4326/10/532/385.kml
+2021-10-15T15:10:10.755887366Z Completed 14.4 KiB/750.8 KiB (26.2 KiB/s) with 76 file(s) remaining
+Completed 57.0 KiB/750.8 KiB (88.6 KiB/s) with 76 file(s) remaining
+upload: ../../tmp/4326L3_p2/10/532/385.png to s3://folder/id/4326/10/532/385.png
+2021-10-15T15:10:10.762260834Z Completed 57.0 KiB/750.8 KiB (88.6 KiB/s) with 75 file(s) remaining
+Completed 58.1 KiB/750.8 KiB (89.5 KiB/s) with 75 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1063/772.kml to s3://folder/id/4326/11/1063/772.kml
+2021-10-15T15:10:10.784118870Z Completed 58.1 KiB/750.8 KiB (89.5 KiB/s) with 74 file(s) remaining
+Completed 58.6 KiB/750.8 KiB (87.2 KiB/s) with 74 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1063/772.png to s3://folder/id/4326/11/1063/772.png
+2021-10-15T15:10:10.790085819Z Completed 58.6 KiB/750.8 KiB (87.2 KiB/s) with 73 file(s) remaining
+Completed 59.7 KiB/750.8 KiB (88.4 KiB/s) with 73 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1064/770.kml to s3://folder/id/4326/11/1064/770.kml
+2021-10-15T15:10:10.795263060Z Completed 59.7 KiB/750.8 KiB (88.4 KiB/s) with 72 file(s) remaining
+Completed 60.8 KiB/750.8 KiB (89.1 KiB/s) with 72 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1064/771.kml to s3://folder/id/4326/11/1064/771.kml
+2021-10-15T15:10:10.806051391Z Completed 60.8 KiB/750.8 KiB (89.1 KiB/s) with 71 file(s) remaining
+Completed 62.7 KiB/750.8 KiB (90.5 KiB/s) with 71 file(s) remaining
+Completed 63.8 KiB/750.8 KiB (91.9 KiB/s) with 71 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1064/772.png to s3://folder/id/4326/11/1064/772.png
+2021-10-15T15:10:10.807167118Z Completed 63.8 KiB/750.8 KiB (91.9 KiB/s) with 70 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1064/772.kml to s3://folder/id/4326/11/1064/772.kml
+2021-10-15T15:10:10.813931464Z Completed 63.8 KiB/750.8 KiB (91.9 KiB/s) with 69 file(s) remaining
+Completed 66.2 KiB/750.8 KiB (94.2 KiB/s) with 69 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1064/770.png to s3://folder/id/4326/11/1064/770.png
+2021-10-15T15:10:10.844821955Z Completed 66.2 KiB/750.8 KiB (94.2 KiB/s) with 68 file(s) remaining
+Completed 67.6 KiB/750.8 KiB (92.2 KiB/s) with 68 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1065/770.png to s3://folder/id/4326/11/1065/770.png
+2021-10-15T15:10:10.942564912Z Completed 67.6 KiB/750.8 KiB (92.2 KiB/s) with 67 file(s) remaining
+Completed 68.7 KiB/750.8 KiB (82.9 KiB/s) with 67 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1065/770.kml to s3://folder/id/4326/11/1065/770.kml
+2021-10-15T15:10:10.946678590Z Completed 68.7 KiB/750.8 KiB (82.9 KiB/s) with 66 file(s) remaining
+Completed 69.8 KiB/750.8 KiB (83.5 KiB/s) with 66 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1065/771.kml to s3://folder/id/4326/11/1065/771.kml
+2021-10-15T15:10:10.965564298Z Completed 69.8 KiB/750.8 KiB (83.5 KiB/s) with 65 file(s) remaining
+Completed 141.3 KiB/750.8 KiB (165.6 KiB/s) with 65 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1064/771.png to s3://folder/id/4326/11/1064/771.png
+2021-10-15T15:10:10.979714228Z Completed 141.3 KiB/750.8 KiB (165.6 KiB/s) with 64 file(s) remaining
+Completed 142.4 KiB/750.8 KiB (164.0 KiB/s) with 64 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2127/1541.kml to s3://folder/id/4326/12/2127/1541.kml
+2021-10-15T15:10:10.995951909Z Completed 142.4 KiB/750.8 KiB (164.0 KiB/s) with 63 file(s) remaining
+Completed 143.5 KiB/750.8 KiB (162.9 KiB/s) with 63 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1065/772.kml to s3://folder/id/4326/11/1065/772.kml
+2021-10-15T15:10:10.999775336Z Completed 143.5 KiB/750.8 KiB (162.9 KiB/s) with 62 file(s) remaining
+Completed 146.3 KiB/750.8 KiB (165.3 KiB/s) with 62 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1065/772.png to s3://folder/id/4326/11/1065/772.png
+2021-10-15T15:10:11.006911266Z Completed 146.3 KiB/750.8 KiB (165.3 KiB/s) with 61 file(s) remaining
+Completed 146.8 KiB/750.8 KiB (164.0 KiB/s) with 61 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2127/1541.png to s3://folder/id/4326/12/2127/1541.png
+2021-10-15T15:10:11.030372446Z Completed 146.8 KiB/750.8 KiB (164.0 KiB/s) with 60 file(s) remaining
+Completed 155.7 KiB/750.8 KiB (170.3 KiB/s) with 60 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2127/1542.png to s3://folder/id/4326/12/2127/1542.png
+2021-10-15T15:10:11.034454195Z Completed 155.7 KiB/750.8 KiB (170.3 KiB/s) with 59 file(s) remaining
+Completed 156.8 KiB/750.8 KiB (170.1 KiB/s) with 59 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2127/1542.kml to s3://folder/id/4326/12/2127/1542.kml
+2021-10-15T15:10:11.137158969Z Completed 156.8 KiB/750.8 KiB (170.1 KiB/s) with 58 file(s) remaining
+Completed 157.9 KiB/750.8 KiB (154.6 KiB/s) with 58 file(s) remaining
+Completed 159.2 KiB/750.8 KiB (155.6 KiB/s) with 58 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2127/1543.kml to s3://folder/id/4326/12/2127/1543.kml
+2021-10-15T15:10:11.144879228Z Completed 159.2 KiB/750.8 KiB (155.6 KiB/s) with 57 file(s) remaining
+Completed 226.3 KiB/750.8 KiB (220.6 KiB/s) with 57 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2127/1543.png to s3://folder/id/4326/12/2127/1543.png
+2021-10-15T15:10:11.148861321Z Completed 226.3 KiB/750.8 KiB (220.6 KiB/s) with 56 file(s) remaining
+upload: ../../tmp/4326L3_p2/11/1065/771.png to s3://folder/id/4326/11/1065/771.png
+2021-10-15T15:10:11.156324790Z Completed 226.3 KiB/750.8 KiB (220.6 KiB/s) with 55 file(s) remaining
+Completed 227.4 KiB/750.8 KiB (217.9 KiB/s) with 55 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2127/1544.kml to s3://folder/id/4326/12/2127/1544.kml
+2021-10-15T15:10:11.188859204Z Completed 227.4 KiB/750.8 KiB (217.9 KiB/s) with 54 file(s) remaining
+Completed 228.5 KiB/750.8 KiB (213.8 KiB/s) with 54 file(s) remaining
+Completed 229.0 KiB/750.8 KiB (213.9 KiB/s) with 54 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2128/1541.kml to s3://folder/id/4326/12/2128/1541.kml
+2021-10-15T15:10:11.189829722Z Completed 229.0 KiB/750.8 KiB (213.9 KiB/s) with 53 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2127/1544.png to s3://folder/id/4326/12/2127/1544.png
+2021-10-15T15:10:11.198496075Z Completed 229.0 KiB/750.8 KiB (213.9 KiB/s) with 52 file(s) remaining
+Completed 230.1 KiB/750.8 KiB (214.3 KiB/s) with 52 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2128/1542.kml to s3://folder/id/4326/12/2128/1542.kml
+2021-10-15T15:10:11.202879717Z Completed 230.1 KiB/750.8 KiB (214.3 KiB/s) with 51 file(s) remaining
+Completed 232.8 KiB/750.8 KiB (213.4 KiB/s) with 51 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2128/1541.png to s3://folder/id/4326/12/2128/1541.png
+2021-10-15T15:10:11.210338740Z Completed 232.8 KiB/750.8 KiB (213.4 KiB/s) with 50 file(s) remaining
+Completed 233.9 KiB/750.8 KiB (212.8 KiB/s) with 50 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2128/1543.kml to s3://folder/id/4326/12/2128/1543.kml
+2021-10-15T15:10:11.302925293Z Completed 233.9 KiB/750.8 KiB (212.8 KiB/s) with 49 file(s) remaining
+Completed 274.7 KiB/750.8 KiB (230.6 KiB/s) with 49 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2128/1542.png to s3://folder/id/4326/12/2128/1542.png
+2021-10-15T15:10:11.331401711Z Completed 274.7 KiB/750.8 KiB (230.6 KiB/s) with 48 file(s) remaining
+Completed 275.8 KiB/750.8 KiB (226.4 KiB/s) with 48 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2128/1544.kml to s3://folder/id/4326/12/2128/1544.kml
+2021-10-15T15:10:11.336108020Z Completed 275.8 KiB/750.8 KiB (226.4 KiB/s) with 47 file(s) remaining
+Completed 276.9 KiB/750.8 KiB (226.1 KiB/s) with 47 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2129/1541.kml to s3://folder/id/4326/12/2129/1541.kml
+2021-10-15T15:10:11.349134932Z Completed 276.9 KiB/750.8 KiB (226.1 KiB/s) with 46 file(s) remaining
+Completed 278.5 KiB/750.8 KiB (225.1 KiB/s) with 46 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2128/1544.png to s3://folder/id/4326/12/2128/1544.png
+2021-10-15T15:10:11.375657419Z Completed 278.5 KiB/750.8 KiB (225.1 KiB/s) with 45 file(s) remaining
+Completed 279.6 KiB/750.8 KiB (221.2 KiB/s) with 45 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2129/1542.kml to s3://folder/id/4326/12/2129/1542.kml
+2021-10-15T15:10:11.384958343Z Completed 279.6 KiB/750.8 KiB (221.2 KiB/s) with 44 file(s) remaining
+Completed 280.7 KiB/750.8 KiB (220.6 KiB/s) with 44 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2129/1543.kml to s3://folder/id/4326/12/2129/1543.kml
+2021-10-15T15:10:11.390797800Z Completed 280.7 KiB/750.8 KiB (220.6 KiB/s) with 43 file(s) remaining
+Completed 285.1 KiB/750.8 KiB (223.1 KiB/s) with 43 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2129/1541.png to s3://folder/id/4326/12/2129/1541.png
+2021-10-15T15:10:11.441135054Z Completed 285.1 KiB/750.8 KiB (223.1 KiB/s) with 42 file(s) remaining
+Completed 334.5 KiB/750.8 KiB (251.6 KiB/s) with 42 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2128/1543.png to s3://folder/id/4326/12/2128/1543.png
+2021-10-15T15:10:11.488326478Z Completed 334.5 KiB/750.8 KiB (251.6 KiB/s) with 41 file(s) remaining
+Completed 335.6 KiB/750.8 KiB (243.7 KiB/s) with 41 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2129/1544.kml to s3://folder/id/4326/12/2129/1544.kml
+2021-10-15T15:10:11.517179508Z Completed 335.6 KiB/750.8 KiB (243.7 KiB/s) with 40 file(s) remaining
+Completed 338.6 KiB/750.8 KiB (241.0 KiB/s) with 40 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2129/1544.png to s3://folder/id/4326/12/2129/1544.png
+2021-10-15T15:10:11.521322744Z Completed 338.6 KiB/750.8 KiB (241.0 KiB/s) with 39 file(s) remaining
+Completed 339.7 KiB/750.8 KiB (241.1 KiB/s) with 39 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2130/1541.kml to s3://folder/id/4326/12/2130/1541.kml
+2021-10-15T15:10:11.536262782Z Completed 339.7 KiB/750.8 KiB (241.1 KiB/s) with 38 file(s) remaining
+Completed 341.8 KiB/750.8 KiB (240.0 KiB/s) with 38 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2130/1541.png to s3://folder/id/4326/12/2130/1541.png
+2021-10-15T15:10:11.542371015Z Completed 341.8 KiB/750.8 KiB (240.0 KiB/s) with 37 file(s) remaining
+Completed 395.6 KiB/750.8 KiB (276.4 KiB/s) with 37 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2129/1542.png to s3://folder/id/4326/12/2129/1542.png
+2021-10-15T15:10:11.562005117Z Completed 395.6 KiB/750.8 KiB (276.4 KiB/s) with 36 file(s) remaining
+Completed 396.7 KiB/750.8 KiB (273.6 KiB/s) with 36 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2130/1542.kml to s3://folder/id/4326/12/2130/1542.kml
+2021-10-15T15:10:11.582891159Z Completed 396.7 KiB/750.8 KiB (273.6 KiB/s) with 35 file(s) remaining
+Completed 397.8 KiB/750.8 KiB (270.8 KiB/s) with 35 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2130/1543.kml to s3://folder/id/4326/12/2130/1543.kml
+2021-10-15T15:10:11.631320362Z Completed 397.8 KiB/750.8 KiB (270.8 KiB/s) with 34 file(s) remaining
+Completed 469.3 KiB/750.8 KiB (308.9 KiB/s) with 34 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2130/1543.png to s3://folder/id/4326/12/2130/1543.png
+2021-10-15T15:10:11.634763035Z Completed 469.3 KiB/750.8 KiB (308.9 KiB/s) with 33 file(s) remaining
+Completed 553.6 KiB/750.8 KiB (363.4 KiB/s) with 33 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2129/1543.png to s3://folder/id/4326/12/2129/1543.png
+2021-10-15T15:10:11.670531076Z Completed 553.6 KiB/750.8 KiB (363.4 KiB/s) with 32 file(s) remaining
+Completed 554.7 KiB/750.8 KiB (355.8 KiB/s) with 32 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2130/1544.kml to s3://folder/id/4326/12/2130/1544.kml
+2021-10-15T15:10:11.701693981Z Completed 554.7 KiB/750.8 KiB (355.8 KiB/s) with 31 file(s) remaining
+Completed 558.7 KiB/750.8 KiB (351.4 KiB/s) with 31 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2130/1544.png to s3://folder/id/4326/12/2130/1544.png
+2021-10-15T15:10:11.707469731Z Completed 558.7 KiB/750.8 KiB (351.4 KiB/s) with 30 file(s) remaining
+Completed 559.8 KiB/750.8 KiB (351.1 KiB/s) with 30 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2131/1541.kml to s3://folder/id/4326/12/2131/1541.kml
+2021-10-15T15:10:11.724102256Z Completed 559.8 KiB/750.8 KiB (351.1 KiB/s) with 29 file(s) remaining
+Completed 561.5 KiB/750.8 KiB (348.6 KiB/s) with 29 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2131/1541.png to s3://folder/id/4326/12/2131/1541.png
+2021-10-15T15:10:11.732018527Z Completed 561.5 KiB/750.8 KiB (348.6 KiB/s) with 28 file(s) remaining
+Completed 595.7 KiB/750.8 KiB (369.3 KiB/s) with 28 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2130/1542.png to s3://folder/id/4326/12/2130/1542.png
+2021-10-15T15:10:11.734671109Z Completed 595.7 KiB/750.8 KiB (369.3 KiB/s) with 27 file(s) remaining
+Completed 596.8 KiB/750.8 KiB (367.9 KiB/s) with 27 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2131/1542.kml to s3://folder/id/4326/12/2131/1542.kml
+2021-10-15T15:10:11.766271549Z Completed 596.8 KiB/750.8 KiB (367.9 KiB/s) with 26 file(s) remaining
+Completed 597.9 KiB/750.8 KiB (361.3 KiB/s) with 26 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2131/1543.kml to s3://folder/id/4326/12/2131/1543.kml
+2021-10-15T15:10:11.828868231Z Completed 597.9 KiB/750.8 KiB (361.3 KiB/s) with 25 file(s) remaining
+Completed 599.0 KiB/750.8 KiB (349.0 KiB/s) with 25 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2131/1544.kml to s3://folder/id/4326/12/2131/1544.kml
+2021-10-15T15:10:11.840694377Z Completed 599.0 KiB/750.8 KiB (349.0 KiB/s) with 24 file(s) remaining
+Completed 659.6 KiB/750.8 KiB (382.0 KiB/s) with 24 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2131/1543.png to s3://folder/id/4326/12/2131/1543.png
+2021-10-15T15:10:11.854432266Z Completed 659.6 KiB/750.8 KiB (382.0 KiB/s) with 23 file(s) remaining
+Completed 663.4 KiB/750.8 KiB (380.9 KiB/s) with 23 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2131/1544.png to s3://folder/id/4326/12/2131/1544.png
+2021-10-15T15:10:11.885067772Z Completed 663.4 KiB/750.8 KiB (380.9 KiB/s) with 22 file(s) remaining
+Completed 664.5 KiB/750.8 KiB (374.7 KiB/s) with 22 file(s) remaining
+upload: ../../tmp/4326L3_p2/5/16/12.kml to s3://folder/id/4326/5/16/12.kml
+2021-10-15T15:10:11.891854698Z Completed 664.5 KiB/750.8 KiB (374.7 KiB/s) with 21 file(s) remaining
+Completed 665.1 KiB/750.8 KiB (374.0 KiB/s) with 21 file(s) remaining
+upload: ../../tmp/4326L3_p2/5/16/12.png to s3://folder/id/4326/5/16/12.png
+2021-10-15T15:10:11.899957293Z Completed 665.1 KiB/750.8 KiB (374.0 KiB/s) with 20 file(s) remaining
+Completed 710.3 KiB/750.8 KiB (397.3 KiB/s) with 20 file(s) remaining
+upload: ../../tmp/4326L3_p2/12/2131/1542.png to s3://folder/id/4326/12/2131/1542.png
+2021-10-15T15:10:11.909882078Z Completed 710.3 KiB/750.8 KiB (397.3 KiB/s) with 19 file(s) remaining
+Completed 711.2 KiB/750.8 KiB (395.5 KiB/s) with 19 file(s) remaining
+upload: ../../tmp/4326L3_p2/6/33/24.png to s3://folder/id/4326/6/33/24.png
+2021-10-15T15:10:11.916075672Z Completed 711.2 KiB/750.8 KiB (395.5 KiB/s) with 18 file(s) remaining
+Completed 712.3 KiB/750.8 KiB (394.7 KiB/s) with 18 file(s) remaining
+upload: ../../tmp/4326L3_p2/6/33/24.kml to s3://folder/id/4326/6/33/24.kml
+2021-10-15T15:10:11.931006392Z Completed 712.3 KiB/750.8 KiB (394.7 KiB/s) with 17 file(s) remaining
+Completed 713.4 KiB/750.8 KiB (392.5 KiB/s) with 17 file(s) remaining
+upload: ../../tmp/4326L3_p2/7/66/48.kml to s3://folder/id/4326/7/66/48.kml
+2021-10-15T15:10:11.955342641Z Completed 713.4 KiB/750.8 KiB (392.5 KiB/s) with 16 file(s) remaining
+Completed 715.3 KiB/750.8 KiB (388.2 KiB/s) with 16 file(s) remaining
+upload: ../../tmp/4326L3_p2/7/66/48.png to s3://folder/id/4326/7/66/48.png
+2021-10-15T15:10:12.012218769Z Completed 715.3 KiB/750.8 KiB (388.2 KiB/s) with 15 file(s) remaining
+Completed 716.4 KiB/750.8 KiB (376.9 KiB/s) with 15 file(s) remaining
+upload: ../../tmp/4326L3_p2/8/132/96.kml to s3://folder/id/4326/8/132/96.kml
+2021-10-15T15:10:12.031322487Z Completed 716.4 KiB/750.8 KiB (376.9 KiB/s) with 14 file(s) remaining
+Completed 717.0 KiB/750.8 KiB (373.4 KiB/s) with 14 file(s) remaining
+upload: ../../tmp/4326L3_p2/8/132/96.png to s3://folder/id/4326/8/132/96.png
+2021-10-15T15:10:12.051270436Z Completed 717.0 KiB/750.8 KiB (373.4 KiB/s) with 13 file(s) remaining
+Completed 718.1 KiB/750.8 KiB (370.2 KiB/s) with 13 file(s) remaining
+upload: ../../tmp/4326L3_p2/8/133/96.kml to s3://folder/id/4326/8/133/96.kml
+2021-10-15T15:10:12.078568409Z Completed 718.1 KiB/750.8 KiB (370.2 KiB/s) with 12 file(s) remaining
+Completed 722.8 KiB/750.8 KiB (368.2 KiB/s) with 12 file(s) remaining
+upload: ../../tmp/4326L3_p2/8/133/96.png to s3://folder/id/4326/8/133/96.png
+2021-10-15T15:10:12.078973007Z Completed 722.8 KiB/750.8 KiB (368.2 KiB/s) with 11 file(s) remaining
+Completed 723.9 KiB/750.8 KiB (368.0 KiB/s) with 11 file(s) remaining
+upload: ../../tmp/4326L3_p2/9/265/192.kml to s3://folder/id/4326/9/265/192.kml
+2021-10-15T15:10:12.084316930Z Completed 723.9 KiB/750.8 KiB (368.0 KiB/s) with 10 file(s) remaining
+Completed 724.8 KiB/750.8 KiB (367.3 KiB/s) with 10 file(s) remaining
+upload: ../../tmp/4326L3_p2/9/265/192.png to s3://folder/id/4326/9/265/192.png
+2021-10-15T15:10:12.092955281Z Completed 724.8 KiB/750.8 KiB (367.3 KiB/s) with 9 file(s) remaining
+Completed 725.9 KiB/750.8 KiB (366.3 KiB/s) with 9 file(s) remaining
+upload: ../../tmp/4326L3_p2/9/265/193.kml to s3://folder/id/4326/9/265/193.kml
+2021-10-15T15:10:12.103749170Z Completed 725.9 KiB/750.8 KiB (366.3 KiB/s) with 8 file(s) remaining
+Completed 726.2 KiB/750.8 KiB (364.5 KiB/s) with 8 file(s) remaining
+upload: ../../tmp/4326L3_p2/9/265/193.png to s3://folder/id/4326/9/265/193.png
+2021-10-15T15:10:12.120856643Z Completed 726.2 KiB/750.8 KiB (364.5 KiB/s) with 7 file(s) remaining
+Completed 727.3 KiB/750.8 KiB (362.0 KiB/s) with 7 file(s) remaining
+upload: ../../tmp/4326L3_p2/9/266/192.kml to s3://folder/id/4326/9/266/192.kml
+2021-10-15T15:10:12.202461325Z Completed 727.3 KiB/750.8 KiB (362.0 KiB/s) with 6 file(s) remaining
+Completed 728.4 KiB/750.8 KiB (348.4 KiB/s) with 6 file(s) remaining
+upload: ../../tmp/4326L3_p2/9/266/193.kml to s3://folder/id/4326/9/266/193.kml
+2021-10-15T15:10:12.215445069Z Completed 728.4 KiB/750.8 KiB (348.4 KiB/s) with 5 file(s) remaining
+Completed 729.1 KiB/750.8 KiB (346.5 KiB/s) with 5 file(s) remaining
+upload: ../../tmp/4326L3_p2/9/266/193.png to s3://folder/id/4326/9/266/193.png
+2021-10-15T15:10:12.224799606Z Completed 729.1 KiB/750.8 KiB (346.5 KiB/s) with 4 file(s) remaining
+Completed 742.9 KiB/750.8 KiB (351.5 KiB/s) with 4 file(s) remaining
+upload: ../../tmp/4326L3_p2/9/266/192.png to s3://folder/id/4326/9/266/192.png
+2021-10-15T15:10:12.236244912Z Completed 742.9 KiB/750.8 KiB (351.5 KiB/s) with 3 file(s) remaining
+Completed 743.9 KiB/750.8 KiB (350.1 KiB/s) with 3 file(s) remaining
+upload: ../../tmp/4326L3_p2/doc.kml to s3://folder/id/4326/doc.kml
+2021-10-15T15:10:12.259123256Z Completed 743.9 KiB/750.8 KiB (350.1 KiB/s) with 2 file(s) remaining
+Completed 750.2 KiB/750.8 KiB (349.3 KiB/s) with 2 file(s) remaining
+upload: ../../tmp/4326L3_p2/openlayers.html to s3://folder/id/4326/openlayers.html
+2021-10-15T15:10:12.263716296Z Completed 750.2 KiB/750.8 KiB (349.3 KiB/s) with 1 file(s) remaining
+Completed 750.8 KiB/750.8 KiB (348.8 KiB/s) with 1 file(s) remaining
+upload: ../../tmp/4326L3_p2/tilemapresource.xml to s3://folder/id/4326/tilemapresource.xml
+2021-10-15T15:10:12.370148791Z [Tiles Generation] Uploading 4326 done Fri Oct 15 15:10:12 UTC 2021
+2021-10-15T15:10:12.380683649Z [Tiles Generation] Creating legend png Fri Oct 15 15:10:12 UTC 2021
+2021-10-15T15:10:13.740431622Z Completed 256.0 KiB/284.5 KiB (400.7 KiB/s) with 1 file(s) remaining
+Completed 284.5 KiB/284.5 KiB (344.1 KiB/s) with 1 file(s) remaining
+upload: ./legendL3_p2.png to s3://folder/id/legendL3_p2.png
+2021-10-15T15:10:13.839596430Z total 1704
+2021-10-15T15:10:13.841677415Z {"url":"https://test.com/alpha/wms?", "protocol":"urn:ogc:serviceType:WebMapService:1.1.1:HTTP", "name":"id", "legend":"https://s3.amazonaws.com/folder/id/legendL3_p2.png", "legendList": [{"type": "square","color": "#35afff","text": "Artificial Water"},{"type": "square","color": "#007a02","text": "Natural Terrestrial Vegetation"},{"type": "square","color": "#02c013","text": "Natural Aquatic Vegetation"}, {"type": "square","color": "#a8ec1f","text": "Cultivated Terrestrial Vegetation"}, {"type": "square","color": "#4ceee8","text": "Cultivated Aquatic Vegetation"}, {"type": "square","color": "#dc5b67","text": "Artificial Surface"},{"type": "square","color": "#f5ac63","text": "Bare or sparsely vegetated surface"},{"type": "square","color": "#0156cf","text": "Natural Water"}, {"type": "square","color": "#000000","text": "Not classificable (cloudy)"}]}
+2021-10-15T15:10:13.846540083Z [Tiles Generation] Starting 4326 conversion Fri Oct 15 15:10:13 UTC 2021
+2021-10-15T15:10:13.994191942Z Using band 4 of source image as alpha.
+2021-10-15T15:10:13.994219656Z Creating output file that is 3945P x 2325L.
+2021-10-15T15:10:13.994223409Z Processing input file /tmp/changes_rgb.tif.
+2021-10-15T15:10:14.286366436Z 0...10...20...30...40...50...60...70...80...90...100 - done.
+2021-10-15T15:10:14.289873587Z [Tiles Generation] Completed 4326 conversion Fri Oct 15 15:10:14 UTC 2021
+2021-10-15T15:10:14.291471900Z [Tiles Generation] Starting 4326 png Fri Oct 15 15:10:14 UTC 2021
+2021-10-15T15:10:14.327699842Z Input file size is 3945, 2325
+2021-10-15T15:10:15.914534909Z 0...10...20...30...40...50...60...70...80...90...100 - done.
+2021-10-15T15:10:15.917911968Z [Tiles Generation] Completed 4326 png Fri Oct 15 15:10:15 UTC 2021
+2021-10-15T15:10:15.919472411Z [Tiles Generation] Starting 3857 conversion Fri Oct 15 15:10:15 UTC 2021
+2021-10-15T15:10:16.014935724Z Using band 4 of source image as alpha.
+2021-10-15T15:10:16.014963990Z Creating output file that is 3502P x 2950L.
+2021-10-15T15:10:16.014968106Z Processing input file /tmp/changes_rgb.tif.
+2021-10-15T15:10:16.368236582Z 0...10...20...30...40...50...60...70...80...90...100 - done.
+2021-10-15T15:10:16.371741730Z [Tiles Generation] Completed 3857 conversion Fri Oct 15 15:10:16 UTC 2021
+2021-10-15T15:10:16.373218969Z [Tiles Generation] Starting 3857 png Fri Oct 15 15:10:16 UTC 2021
+2021-10-15T15:10:16.408881388Z Input file size is 3502, 2950
+2021-10-15T15:10:18.263090745Z 0...10...20...30...40...50...60...70...80...90...100 - done.
+2021-10-15T15:10:18.266529276Z [Tiles Generation] Completed 3857 png Fri Oct 15 15:10:18 UTC 2021
+2021-10-15T15:10:18.271524126Z [Tiles Generation] Starting 4326 tiles Fri Oct 15 15:10:18 UTC 2021
+2021-10-15T15:10:18.376775016Z parallel: Warning: $SHELL not set. Using /bin/sh.

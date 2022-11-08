@@ -1,0 +1,9 @@
+{
+  "scripts": [
+    {
+      "repoPath": "P1Scripts",
+      "targetPath": "P1Scripts",
+      "pathType": "DIRECTORY"
+    }
+  ]
+}

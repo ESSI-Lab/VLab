@@ -1,0 +1,15 @@
+{
+  "image": "repo/alpine:3.5-sftp-ssl",
+  "resources": {
+    "memory_mb": ""
+  },
+  "container": {
+    "entryPoint": [
+      "/bin/sh",
+      "-c"
+    ],
+    "command": [
+      "./sample.sh"
+    ]
+  }
+}

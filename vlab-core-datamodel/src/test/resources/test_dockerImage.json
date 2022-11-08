@@ -1,0 +1,17 @@
+{
+  "image": "repository/anaconda:0.1.0",
+  "resources": {
+    "memory_mb": "200",
+    "cpu_units": ""
+  },
+  "container": {
+    "entryPoint": [
+      "/bin/bash",
+      "-c"
+    ],
+    "command": [
+      "source activate test",
+      "modelrun.sh"
+    ]
+  }
+}

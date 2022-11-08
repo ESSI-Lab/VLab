@@ -1,0 +1,2 @@
+eu.essi_lab.vlab.ce.engine.services.KubemqClient
+eu.essi_lab.vlab.ce.engine.services.SQSClient

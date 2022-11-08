@@ -1,0 +1,39 @@
+{
+  "inputs": [
+    {
+      "id": "DataObject_1wb6a70",
+      "inputType": "individual",
+      "valueType": "value",
+      "description": "Clumps description",
+      "name": "Input name",
+      "obligation": true,
+      "hasDefault": true,
+      "valueSchema": "url",
+      "defaultValue": "http://www.test.com/ons/dcp171766_224403.pdf",
+      "target": "inputs/test.pdf"
+    },
+    {
+      "id": "DataObject_1wb6a70_2",
+      "inputType": "individual",
+      "valueType": "value",
+      "description": "Clumps description second",
+      "name": "Second Input name",
+      "obligation": true,
+      "hasDefault": true,
+      "valueSchema": "url",
+      "defaultValue": "http://www.test.com/ons/dcp171766_224403.pdf",
+      "target": "inputs/test2.pdf"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "iDataObject_0loj2kk",
+      "outputType": "individual",
+      "valueType": "value",
+      "description": "Thematic Layers description",
+      "name": "Output Name",
+      "valueSchema": "url",
+      "target": "output.txt"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "cluster_name": "123456:esdablog",
+  "cluster_uuid": "KiIqsRmhQpORMlY6hneOvQ",
+  "name": "vsUSTqg",
+  "tagline": "You Know, for Search",
+  "version": {
+    "number": "5.3.2",
+    "build_date": "2019-07-23T16:16:54.991Z",
+    "build_snapshot": false,
+    "lucene_version": "6.4.2",
+    "build_hash": "Unknown"
+  }
+}

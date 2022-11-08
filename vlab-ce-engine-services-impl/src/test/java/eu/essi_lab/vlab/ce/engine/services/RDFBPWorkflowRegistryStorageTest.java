@@ -1,0 +1,700 @@
+package eu.essi_lab.vlab.ce.engine.services;
+
+import eu.essi_lab.vlab.ce.engine.services.rdf.RDFQueryBuilder;
+import eu.essi_lab.vlab.core.datamodel.APIWorkflowDetail;
+import eu.essi_lab.vlab.core.datamodel.BPException;
+import eu.essi_lab.vlab.core.datamodel.BPUser;
+import eu.essi_lab.vlab.core.datamodel.SearchWorkflowsResponse;
+import eu.essi_lab.vlab.core.utils.URLReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Stream;
+import org.eclipse.rdf4j.model.Model;
+import org.eclipse.rdf4j.model.Statement;
+import org.eclipse.rdf4j.model.impl.LinkedHashModel;
+import org.eclipse.rdf4j.model.impl.SimpleValueFactory;
+import org.eclipse.rdf4j.query.GraphQuery;
+import org.eclipse.rdf4j.query.GraphQueryResult;
+import org.eclipse.rdf4j.query.TupleQuery;
+import org.eclipse.rdf4j.query.TupleQueryResult;
+import org.eclipse.rdf4j.query.resultio.helpers.QueryResultCollector;
+import org.eclipse.rdf4j.query.resultio.sparqlxml.SPARQLResultsXMLParser;
+import org.eclipse.rdf4j.repository.Repository;
+import org.eclipse.rdf4j.repository.RepositoryConnection;
+import org.eclipse.rdf4j.repository.RepositoryException;
+import org.eclipse.rdf4j.repository.sail.SailRepository;
+import org.eclipse.rdf4j.rio.helpers.StatementCollector;
+import org.eclipse.rdf4j.rio.rdfxml.RDFXMLParser;
+import org.eclipse.rdf4j.sail.memory.MemoryStore;
+import org.junit.Assert;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.rules.ExpectedException;
+import org.mockito.Mockito;
+import org.mockito.invocation.InvocationOnMock;
+import org.mockito.stubbing.Answer;
+
+/**
+ * @author Mattia Santoro
+ */
+public class RDFBPWorkflowRegistryStorageTest {
+
+	@Rule
+	public ExpectedException expectedException = ExpectedException.none();
+
+	@Test
+	public void test() throws BPException, IOException {
+
+		URL url = this.getClass().getClassLoader().getResource("detailsrdfresult.xml");
+
+		InputStream stream = new URLReader().read(url.toString());
+
+		RDFXMLParser parser = new RDFXMLParser();
+
+		Model model = new LinkedHashModel();
+		parser.setRDFHandler(new StatementCollector(model));
+		parser.parse(stream, "");
+
+		RDFBPWorkflowRegistryStorage storage = Mockito.spy(new RDFBPWorkflowRegistryStorage());
+
+		Repository sparqlRepository = Mockito.mock(Repository.class);
+		storage.setRepository(sparqlRepository);
+
+		RDFQueryBuilder builder = Mockito.mock(RDFQueryBuilder.class);
+
+		Mockito.doReturn(builder).when(storage).getRDFBuilder();
+
+		GraphQuery query = Mockito.mock(GraphQuery.class);
+
+		Mockito.doAnswer(new Answer() {
+			@Override
+			public Object answer(InvocationOnMock invocationOnMock) throws Throwable {
+
+				List<String> list = (List<String>) invocationOnMock.getArguments()[1];
+
+				if (1 - list.size() != 0)
+					throw new Exception("Bad number of identifiers");
+
+				return query;
+			}
+		}).when(builder).resourceDetailsQuery(Mockito.any(), Mockito.any());
+
+		GraphQueryResult result = Mockito.mock(GraphQueryResult.class);
+
+		Stream<Statement> statementsStream = model.stream();
+
+		Mockito.doReturn(statementsStream).when(result).stream();
+		Mockito.doReturn(result).when(query).evaluate();
+
+		APIWorkflowDetail workflow = storage.getAPIWorkflowDetail("http://eu.essi_lab.vlab.core/workflow/id", null);
+
+		Assert.assertEquals("User Name", workflow.getModelDeveloper());
+
+		Mockito.verify(builder, Mockito.times(1)).resourceDetailsQuery(Mockito.any(), Mockito.any());
+		Mockito.verify(query, Mockito.times(1)).evaluate();
+
+	}
+
+	@Test
+	public void test2() throws BPException, IOException {
+
+		expectedException.expect(new BPExceptionMatcher("Can't find workflow with id", BPException.ERROR_CODES.RESOURCE_NOT_FOUND));
+		Model model = new LinkedHashModel();
+
+		RDFBPWorkflowRegistryStorage storage = Mockito.spy(new RDFBPWorkflowRegistryStorage());
+
+		Repository sparqlRepository = Mockito.mock(Repository.class);
+		storage.setRepository(sparqlRepository);
+
+		RDFQueryBuilder builder = Mockito.mock(RDFQueryBuilder.class);
+
+		Mockito.doReturn(builder).when(storage).getRDFBuilder();
+
+		GraphQuery query = Mockito.mock(GraphQuery.class);
+
+		Mockito.doAnswer(new Answer() {
+			@Override
+			public Object answer(InvocationOnMock invocationOnMock) throws Throwable {
+
+				List<String> list = (List<String>) invocationOnMock.getArguments()[1];
+
+				if (1 - list.size() != 0)
+					throw new Exception("Bad number of identifiers");
+
+				return query;
+			}
+		}).when(builder).resourceDetailsQuery(Mockito.any(), Mockito.any());
+
+		GraphQueryResult result = Mockito.mock(GraphQueryResult.class);
+
+		Stream<Statement> statementsStream = model.stream();
+
+		Mockito.doReturn(statementsStream).when(result).stream();
+		Mockito.doReturn(result).when(query).evaluate();
+
+		APIWorkflowDetail workflow = storage.getAPIWorkflowDetail(
+				"http://eu.essi_lab.vlab.core/workflow/autogenerated-1561726284156-process", null);
+
+	}
+
+	@Test
+	public void tes3() throws BPException, IOException {
+
+		URL url = this.getClass().getClassLoader().getResource("countresult.xml");
+		URL idurl = this.getClass().getClassLoader().getResource("idsresult.xml");
+
+		InputStream stream = new URLReader().read(url.toString());
+		InputStream idstream = new URLReader().read(idurl.toString());
+
+		QueryResultCollector countcollector = new QueryResultCollector();
+		QueryResultCollector idcollector = new QueryResultCollector();
+
+		SPARQLResultsXMLParser parser = new SPARQLResultsXMLParser(SimpleValueFactory.getInstance());
+		parser.setTupleQueryResultHandler(countcollector);
+		parser.parseQueryResult(stream);
+
+		SPARQLResultsXMLParser idparser = new SPARQLResultsXMLParser(SimpleValueFactory.getInstance());
+		idparser.setTupleQueryResultHandler(idcollector);
+		idparser.parseQueryResult(idstream);
+
+		RDFBPWorkflowRegistryStorage storage = Mockito.spy(new RDFBPWorkflowRegistryStorage());
+
+		Repository sparqlRepository = Mockito.mock(Repository.class);
+		storage.setRepository(sparqlRepository);
+
+		RDFQueryBuilder builder = Mockito.mock(RDFQueryBuilder.class);
+		Mockito.doReturn(builder).when(storage).getRDFBuilder();
+
+		TupleQuery countquery = Mockito.mock(TupleQuery.class);
+		Mockito.doReturn(countquery).when(builder).countQuery(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any());
+		TupleQueryResult countresult = Mockito.mock(TupleQueryResult.class);
+		Mockito.doReturn(countcollector.getBindingSets().iterator()).when(countresult).iterator();
+		Mockito.doReturn(countresult).when(countquery).evaluate();
+
+		TupleQuery idquery = Mockito.mock(TupleQuery.class);
+		Mockito.doReturn(idquery).when(builder).matchQuery(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any(),
+				Mockito.any());
+		TupleQueryResult idresult = Mockito.mock(TupleQueryResult.class);
+		Mockito.doReturn(idcollector.getBindingSets().iterator()).when(idresult).iterator();
+		Mockito.doReturn(idresult).when(idquery).evaluate();
+
+		List<APIWorkflowDetail> l = new ArrayList<>();
+		l.add(Mockito.mock(APIWorkflowDetail.class));
+		l.add(Mockito.mock(APIWorkflowDetail.class));
+		l.add(Mockito.mock(APIWorkflowDetail.class));
+
+		Mockito.doAnswer(new Answer() {
+			@Override
+			public Object answer(InvocationOnMock invocationOnMock) throws Throwable {
+
+				List<String> ids = (List<String>) invocationOnMock.getArguments()[0];
+
+				if (3 != ids.size())
+					throw new Exception("Expected 3 ids");
+
+				return l;
+			}
+		}).when(storage).getAPIWorkflowDetail(Mockito.any());
+
+		SearchWorkflowsResponse response = storage.searchWorkflowDetail("", 0, 3, false, new BPUser());
+
+		Assert.assertEquals((Integer) 6, (Integer) response.getTotal());
+		Assert.assertEquals((Integer) 3, (Integer) response.getWorkflows().size());
+
+		Mockito.verify(builder, Mockito.times(1)).countQuery(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any());
+		Mockito.verify(builder, Mockito.times(1)).matchQuery(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any(),
+				Mockito.any());
+
+		Mockito.verify(countquery, Mockito.times(1)).evaluate();
+		Mockito.verify(idquery, Mockito.times(1)).evaluate();
+
+	}
+
+	@Test
+	public void tes4() throws BPException, IOException {
+
+		RDFBPWorkflowRegistryStorage storage = Mockito.spy(new RDFBPWorkflowRegistryStorage());
+
+		Repository sparqlRepository = Mockito.mock(Repository.class);
+		storage.setRepository(sparqlRepository);
+
+		RDFQueryBuilder builder = Mockito.mock(RDFQueryBuilder.class);
+		Mockito.doReturn(builder).when(storage).getRDFBuilder();
+
+		Mockito.doReturn(0).when(storage).countTupleQuery(Mockito.any(), Mockito.any());
+
+		SearchWorkflowsResponse response = storage.searchWorkflowDetail("", 0, 3, false, new BPUser());
+
+		Assert.assertEquals((Integer) 0, (Integer) response.getTotal());
+		Assert.assertEquals((Integer) 0, (Integer) response.getWorkflows().size());
+
+		Mockito.verify(builder, Mockito.times(1)).countQuery(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any());
+		Mockito.verify(builder, Mockito.times(0)).matchQuery(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any(),
+				Mockito.any());
+
+		Mockito.verify(storage, Mockito.times(1)).countTupleQuery(Mockito.any(), Mockito.any());
+		Mockito.verify(storage, Mockito.times(0)).getIdentifiersTupleQuery(Mockito.any(), Mockito.any());
+		Mockito.verify(storage, Mockito.times(0)).getResourcesGraphQuery(Mockito.any(), Mockito.any());
+	}
+
+	@Test
+	public void tes5() throws BPException, IOException {
+
+		RDFBPWorkflowRegistryStorage storage = Mockito.spy(new RDFBPWorkflowRegistryStorage());
+
+		Repository sparqlRepository = Mockito.mock(Repository.class);
+		storage.setRepository(sparqlRepository);
+
+		RDFQueryBuilder builder = Mockito.mock(RDFQueryBuilder.class);
+		Mockito.doReturn(builder).when(storage).getRDFBuilder();
+
+		Mockito.doReturn(5).when(storage).countTupleQuery(Mockito.any(), Mockito.any());
+		Mockito.doReturn(new ArrayList<>()).when(storage).getIdentifiersTupleQuery(Mockito.any(), Mockito.any());
+
+		SearchWorkflowsResponse response = storage.searchWorkflowDetail("", 0, 3, false, new BPUser());
+
+		Assert.assertEquals((Integer) 5, (Integer) response.getTotal());
+		Assert.assertEquals((Integer) 0, (Integer) response.getWorkflows().size());
+
+		Mockito.verify(builder, Mockito.times(1)).countQuery(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any());
+		Mockito.verify(builder, Mockito.times(1)).matchQuery(Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any(), Mockito.any(),
+				Mockito.any());
+
+		Mockito.verify(storage, Mockito.times(1)).countTupleQuery(Mockito.any(), Mockito.any());
+		Mockito.verify(storage, Mockito.times(1)).getIdentifiersTupleQuery(Mockito.any(), Mockito.any());
+
+		Mockito.verify(storage, Mockito.times(0)).getResourcesGraphQuery(Mockito.any(), Mockito.any());
+
+	}
+
+	@Test
+	public void tes6() throws BPException, IOException {
+
+		RDFBPWorkflowRegistryStorage storage = Mockito.spy(new RDFBPWorkflowRegistryStorage());
+
+		Repository sparqlRepository = Mockito.mock(Repository.class);
+		storage.setRepository(sparqlRepository);
+
+		RepositoryConnection connection = Mockito.mock(RepositoryConnection.class);
+
+		Mockito.doReturn(connection).when(sparqlRepository).getConnection();
+
+		APIWorkflowDetail bp = new APIWorkflowDetail();
+		bp.setId("http://id");
+		bp.setDescription("desc");
+		bp.setModelDeveloperEmail("email");
+		bp.setModelDeveloper("dev");
+		bp.setModelDeveloperOrg("org");
+		bp.setUnder_test(true);
+		bp.setName("name");
+		bp.setBpmn_url("url");
+
+		Mockito.doAnswer(new Answer() {
+			@Override
+			public Object answer(InvocationOnMock invocationOnMock) throws Throwable {
+				Iterator<? extends Statement> it = ((Iterable<? extends Statement>) invocationOnMock.getArguments()[0]).iterator();
+
+				int n = 0;
+				while (it.hasNext()) {
+					n++;
+					it.next();
+				}
+
+				if (n != 8)
+					throw new Exception("Bad number of statements " + n);
+
+				return null;
+			}
+		}).when(connection).add((Iterable<? extends Statement>) Mockito.any(), Mockito.any());
+
+		storage.storeWorkflowDetail(bp);
+
+		Mockito.verify(connection, Mockito.times(1)).add((Iterable<? extends Statement>) Mockito.any(), Mockito.any());
+	}
+
+	@Test
+	public void tes7() throws BPException, IOException {
+
+		expectedException.expect(
+				new BPExceptionMatcher("RepositoryException adding statements in RDF storage", BPException.ERROR_CODES.RDF_STORE_ERROR));
+
+		RDFBPWorkflowRegistryStorage storage = Mockito.spy(new RDFBPWorkflowRegistryStorage());
+
+		Repository sparqlRepository = Mockito.mock(Repository.class);
+		storage.setRepository(sparqlRepository);
+
+		RepositoryConnection connection = Mockito.mock(RepositoryConnection.class);
+
+		Mockito.doReturn(connection).when(sparqlRepository).getConnection();
+
+		APIWorkflowDetail bp = new APIWorkflowDetail();
+		bp.setId("http://id");
+		bp.setDescription("desc");
+		bp.setModelDeveloperEmail("email");
+		bp.setModelDeveloper("dev");
+		bp.setModelDeveloperOrg("org");
+		bp.setUnder_test(true);
+		bp.setName("name");
+		bp.setBpmn_url("url");
+
+		Mockito.doAnswer(new Answer() {
+			@Override
+			public Object answer(InvocationOnMock invocationOnMock) throws Throwable {
+				Iterator<? extends Statement> it = ((Iterable<? extends Statement>) invocationOnMock.getArguments()[0]).iterator();
+
+				int n = 0;
+				while (it.hasNext()) {
+					n++;
+					it.next();
+				}
+
+				if (n != 8)
+					throw new Exception("Bad number of statements " + n);
+
+				throw new RepositoryException("");
+			}
+		}).when(connection).add((Iterable<? extends Statement>) Mockito.any(), Mockito.any());
+
+		storage.storeWorkflowDetail(bp);
+	}
+
+	@Test
+	public void testStoreDelete() throws BPException {
+		MemoryStore store = new MemoryStore();
+
+		Repository repository = new SailRepository(store);
+		RDFBPWorkflowRegistryStorage storage = new RDFBPWorkflowRegistryStorage();
+		storage.setRepository(repository);
+		BPUser user = new BPUser();
+		user.setEmail("email");
+
+		String id = "http://eu.essi_lab.vlab.core/workflow/autogenerated-1561726284156-process";
+		try {
+			storage.getAPIWorkflowDetail(id, user);
+			Assert.fail("Expected Not found Exception");
+		} catch (BPException bpException) {
+
+			Assert.assertEquals((Integer) BPException.ERROR_CODES.RESOURCE_NOT_FOUND.getCode(), (Integer) bpException.getErroCode());
+		}
+		APIWorkflowDetail bp = new APIWorkflowDetail();
+		bp.setId(id);
+		bp.setDescription("desc");
+		bp.setModelDeveloperEmail("email");
+		bp.setModelDeveloper("dev");
+		bp.setModelDeveloperOrg("org");
+		bp.setUnder_test(true);
+		bp.setName("name");
+		bp.setBpmn_url("url");
+
+		storage.storeWorkflowDetail(bp);
+
+		APIWorkflowDetail retrieved = storage.getAPIWorkflowDetail(id, user);
+
+		Assert.assertEquals(id, retrieved.getId());
+
+		storage.deleteWorkflowDetail(id);
+
+		try {
+			storage.getAPIWorkflowDetail(id, user);
+			Assert.fail("Expected Not found Exception");
+		} catch (BPException bpException) {
+
+			Assert.assertEquals((Integer) BPException.ERROR_CODES.RESOURCE_NOT_FOUND.getCode(), (Integer) bpException.getErroCode());
+		}
+
+	}
+
+	@Test
+	public void testUpdate() throws BPException {
+		MemoryStore store = new MemoryStore();
+
+		Repository repository = new SailRepository(store);
+		RDFBPWorkflowRegistryStorage storage = new RDFBPWorkflowRegistryStorage();
+		storage.setRepository(repository);
+		BPUser user = new BPUser();
+		user.setEmail("email");
+
+		String id = "http://eu.essi_lab.vlab.core/workflow/autogenerated-1561726284156-process";
+		try {
+			storage.getAPIWorkflowDetail(id, user);
+			Assert.fail("Expected Not found Exception");
+		} catch (BPException bpException) {
+
+			Assert.assertEquals((Integer) BPException.ERROR_CODES.RESOURCE_NOT_FOUND.getCode(), (Integer) bpException.getErroCode());
+		}
+		APIWorkflowDetail bp = new APIWorkflowDetail();
+		bp.setId(id);
+		bp.setDescription("desc");
+		bp.setModelDeveloperEmail("email");
+		bp.setModelDeveloper("dev");
+		bp.setModelDeveloperOrg("org");
+		bp.setUnder_test(true);
+		bp.setName("name");
+		bp.setBpmn_url("url");
+
+		storage.storeWorkflowDetail(bp);
+
+		APIWorkflowDetail retrieved = storage.getAPIWorkflowDetail(id, user);
+
+		Assert.assertEquals(id, retrieved.getId());
+
+		retrieved.setName("New name");
+		retrieved.setBpmn_url("newurl");
+
+		storage.updateWorkflowProperties(retrieved, bp);
+
+		APIWorkflowDetail retrieved2 = storage.getAPIWorkflowDetail(id, user);
+
+		Assert.assertEquals(id, retrieved2.getId());
+
+		Assert.assertEquals("New name", retrieved2.getName());
+		Assert.assertEquals("newurl", retrieved2.getBpmn_url());
+
+		storage.deleteWorkflowDetail(id);
+
+		try {
+			storage.getAPIWorkflowDetail(id, user);
+			Assert.fail("Expected Not found Exception");
+		} catch (BPException bpException) {
+
+			Assert.assertEquals((Integer) BPException.ERROR_CODES.RESOURCE_NOT_FOUND.getCode(), (Integer) bpException.getErroCode());
+		}
+
+	}
+
+	@Test
+	public void testUpdate2() throws BPException {
+		MemoryStore store = new MemoryStore();
+
+		Repository repository = new SailRepository(store);
+		RDFBPWorkflowRegistryStorage storage = new RDFBPWorkflowRegistryStorage();
+		storage.setRepository(repository);
+		BPUser user = new BPUser();
+		user.setEmail("email");
+
+		String id = "http://eu.essi_lab.vlab.core/workflow/autogenerated-1561726284156-process";
+		try {
+			storage.getAPIWorkflowDetail(id, user);
+			Assert.fail("Expected Not found Exception");
+		} catch (BPException bpException) {
+
+			Assert.assertEquals((Integer) BPException.ERROR_CODES.RESOURCE_NOT_FOUND.getCode(), (Integer) bpException.getErroCode());
+		}
+		APIWorkflowDetail bp = new APIWorkflowDetail();
+		bp.setId(id);
+		bp.setDescription("desc");
+		bp.setModelDeveloperEmail("email");
+		bp.setModelDeveloper("dev");
+		bp.setModelDeveloperOrg("org");
+		bp.setUnder_test(true);
+		bp.setName("name");
+		bp.setBpmn_url("url");
+		bp.setSharedWith(Arrays.asList("user1"));
+
+		storage.storeWorkflowDetail(bp);
+
+		APIWorkflowDetail retrieved = storage.getAPIWorkflowDetail(id, user);
+
+		Assert.assertEquals(id, retrieved.getId());
+
+		retrieved.setName("New name");
+		retrieved.setBpmn_url("newurl");
+		retrieved.setSharedWith(Arrays.asList("user1", "user2"));
+
+		storage.updateWorkflowProperties(retrieved, bp);
+
+		APIWorkflowDetail retrieved2 = storage.getAPIWorkflowDetail(id, user);
+
+		Assert.assertEquals(id, retrieved2.getId());
+
+		Assert.assertEquals("New name", retrieved2.getName());
+		Assert.assertEquals("newurl", retrieved2.getBpmn_url());
+		Assert.assertEquals(2, retrieved2.getSharedWith().size());
+		Assert.assertTrue(retrieved2.getSharedWith().contains("user1"));
+		Assert.assertTrue(retrieved2.getSharedWith().contains("user2"));
+
+		storage.deleteWorkflowDetail(id);
+
+		try {
+			storage.getAPIWorkflowDetail(id, user);
+			Assert.fail("Expected Not found Exception");
+		} catch (BPException bpException) {
+
+			Assert.assertEquals((Integer) BPException.ERROR_CODES.RESOURCE_NOT_FOUND.getCode(), (Integer) bpException.getErroCode());
+		}
+
+	}
+
+	@Test
+	public void testUpdate3() throws BPException {
+		MemoryStore store = new MemoryStore();
+
+		Repository repository = new SailRepository(store);
+		RDFBPWorkflowRegistryStorage storage = new RDFBPWorkflowRegistryStorage();
+		storage.setRepository(repository);
+		BPUser user = new BPUser();
+		user.setEmail("email");
+
+		String id = "http://eu.essi_lab.vlab.core/workflow/autogenerated-1561726284156-process";
+		try {
+			storage.getAPIWorkflowDetail(id, user);
+			Assert.fail("Expected Not found Exception");
+		} catch (BPException bpException) {
+
+			Assert.assertEquals((Integer) BPException.ERROR_CODES.RESOURCE_NOT_FOUND.getCode(), (Integer) bpException.getErroCode());
+		}
+		APIWorkflowDetail bp = new APIWorkflowDetail();
+		bp.setId(id);
+		bp.setDescription("desc");
+		bp.setModelDeveloperEmail("email");
+		bp.setModelDeveloper("dev");
+		bp.setModelDeveloperOrg("org");
+		bp.setUnder_test(true);
+		bp.setName("name");
+		bp.setBpmn_url("url");
+		bp.setSharedWith(Arrays.asList("user3"));
+
+		storage.storeWorkflowDetail(bp);
+
+		APIWorkflowDetail retrieved = storage.getAPIWorkflowDetail(id, user);
+
+		Assert.assertEquals(id, retrieved.getId());
+
+		retrieved.setName("New name");
+		retrieved.setBpmn_url("newurl");
+		retrieved.setSharedWith(Arrays.asList("user1", "user2"));
+
+		storage.updateWorkflowProperties(retrieved, bp);
+
+		APIWorkflowDetail retrieved2 = storage.getAPIWorkflowDetail(id, user);
+
+		Assert.assertEquals(id, retrieved2.getId());
+
+		Assert.assertEquals("New name", retrieved2.getName());
+		Assert.assertEquals("newurl", retrieved2.getBpmn_url());
+		Assert.assertEquals(3, retrieved2.getSharedWith().size());
+		Assert.assertTrue(retrieved2.getSharedWith().contains("user1"));
+		Assert.assertTrue(retrieved2.getSharedWith().contains("user2"));
+		Assert.assertTrue(retrieved2.getSharedWith().contains("user3"));
+
+		storage.deleteWorkflowDetail(id);
+
+		try {
+			storage.getAPIWorkflowDetail(id, user);
+			Assert.fail("Expected Not found Exception");
+		} catch (BPException bpException) {
+
+			Assert.assertEquals((Integer) BPException.ERROR_CODES.RESOURCE_NOT_FOUND.getCode(), (Integer) bpException.getErroCode());
+		}
+
+	}
+
+	@Test
+	public void testCompare() throws BPException {
+		MemoryStore store = new MemoryStore();
+
+		Repository repository = new SailRepository(store);
+		RDFBPWorkflowRegistryStorage storage = new RDFBPWorkflowRegistryStorage();
+		storage.setRepository(repository);
+		BPUser user = new BPUser();
+		user.setEmail("email");
+
+		String id = "http://eu.essi_lab.vlab.core/workflow/autogenerated-1561726284156-process";
+		try {
+			storage.getAPIWorkflowDetail(id, user);
+			Assert.fail("Expected Not found Exception");
+		} catch (BPException bpException) {
+
+			Assert.assertEquals((Integer) BPException.ERROR_CODES.RESOURCE_NOT_FOUND.getCode(), (Integer) bpException.getErroCode());
+		}
+
+		APIWorkflowDetail bp = new APIWorkflowDetail();
+		bp.setId(id);
+		bp.setDescription("desc");
+		bp.setModelDeveloperEmail("email");
+		bp.setModelDeveloper("dev");
+		bp.setModelDeveloperOrg("org");
+		bp.setUnder_test(true);
+		bp.setName("name");
+		bp.setBpmn_url("url");
+
+		storage.storeWorkflowDetail(bp);
+
+		APIWorkflowDetail retrieved = storage.getAPIWorkflowDetail(id, user);
+
+		Assert.assertEquals(id, retrieved.getId());
+
+		retrieved.setName("New name");
+		retrieved.setBpmn_url("newurl");
+
+		Set<Statement> remove = storage.calculateToRemove(retrieved, bp);
+
+		Assert.assertEquals(2, remove.size());
+
+		Set<Statement> add = storage.calculateToAdd(retrieved, bp);
+
+		Assert.assertEquals(2, add.size());
+
+	}
+
+	@Test
+	public void testCompare2() throws BPException {
+
+		MemoryStore store = new MemoryStore();
+
+		Repository repository = new SailRepository(store);
+
+		((SailRepository) repository).getSail().getConnection();
+		((SailRepository) repository).getConnection();
+		repository.getConnection();
+		RDFBPWorkflowRegistryStorage storage = new RDFBPWorkflowRegistryStorage();
+		storage.setRepository(repository);
+		BPUser user = new BPUser();
+		user.setEmail("email");
+
+		String id = "http://eu.essi_lab.vlab.core/workflow/autogenerated-1561726284156-process";
+		try {
+			storage.getAPIWorkflowDetail(id, user);
+			Assert.fail("Expected Not found Exception");
+		} catch (BPException bpException) {
+
+			Assert.assertEquals((Integer) BPException.ERROR_CODES.RESOURCE_NOT_FOUND.getCode(), (Integer) bpException.getErroCode());
+		}
+
+		APIWorkflowDetail bp = new APIWorkflowDetail();
+		bp.setId(id);
+		bp.setDescription("desc");
+		bp.setModelDeveloperEmail("email");
+		bp.setModelDeveloper("dev");
+		bp.setModelDeveloperOrg("org");
+		bp.setUnder_test(true);
+		bp.setName("name");
+		bp.setBpmn_url("url");
+		bp.setSharedWith(Arrays.asList("user1"));
+
+		storage.storeWorkflowDetail(bp);
+
+		APIWorkflowDetail retrieved = storage.getAPIWorkflowDetail(id, user);
+
+		Assert.assertEquals(id, retrieved.getId());
+
+		retrieved.setName("New name");
+		retrieved.setBpmn_url("newurl");
+		retrieved.setSharedWith(Arrays.asList("user1", "user2"));
+
+		Set<Statement> remove = storage.calculateToRemove(retrieved, bp);
+
+		Assert.assertEquals(2, remove.size());
+
+		Set<Statement> add = storage.calculateToAdd(retrieved, bp);
+
+		Assert.assertEquals(3, add.size());
+
+	}
+}

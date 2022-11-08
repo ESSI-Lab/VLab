@@ -1,0 +1,21 @@
+{
+  "scripts": [
+    {
+      "repoPath": "sample.sh",
+      "targetPath": "sample.sh",
+      "pathType": "FILE"
+    },
+    {
+      "repoPath": "sample1.sh",
+      "targetPath": "sample1_t.sh",
+      "pathType": "FILE"
+    },
+    {
+      "repoPath": "dir1",
+      "targetPath": "dir1_t",
+      "pathType": "DIRECTORY"
+    }
+
+
+  ]
+}

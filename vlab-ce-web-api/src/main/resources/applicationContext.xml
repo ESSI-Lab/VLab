@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jee="http://www.springframework.org/schema/jee" xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+    http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+    http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd
+    http://cxf.apache.org/jaxrs    http://cxf.apache.org/schemas/jaxrs.xsd"
+       default-dependency-check="none" default-lazy-init="false">
+
+
+    <bean id="suic" class="org.apache.cxf.jaxrs.swagger.ui.SwaggerUiConfig">
+        <property name="url" value="./swagger.json"/>
+    </bean>
+    <!-- CXF Swagger2Feature -->
+    <bean id="swagger2Feature" class="org.apache.cxf.jaxrs.swagger.Swagger2Feature">
+        <!-- customize some of the properties -->
+        <property name="prettyPrint" value="true"/>
+        <property name="license" value=" "/>
+        <property name="licenseUrl" value=""/>
+        <property name="SwaggerUiConfig" ref="suic"/>
+
+
+    </bean>
+
+    <!-- Swagger2Feature Fix -->
+    <bean id="fixProvider" class="eu.essi_lab.vlab.core.web.servlet.filter.SwaggerUIFilterFix"/>
+
+    <bean id="vlabAPI" class="eu.essi_lab.vlab.web.api.VLabAPI"/>
+    <bean id="jsonProvider" class="com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider"/>
+    <bean id="exceptionProvider" class="eu.essi_lab.vlab.web.api.exception.BPExceptionMapper"/>
+    <bean id="exceptionProvider2" class="eu.essi_lab.vlab.web.api.exception.JsonExceptionMapper"/>
+    <bean id="exceptionProvider3" class="eu.essi_lab.vlab.web.api.exception.GenericExceptionMapper"/>
+    <bean id="contentTypeFixInterceptor" class="eu.essi_lab.vlab.web.servlet.filter.ContentTypeFixInterceptor"/>
+    <bean id="corsFilter" class="eu.essi_lab.vlab.web.servlet.filter.CORSFilter"/>
+
+    <jaxrs:server id="vlabAPIService" address="/">
+        <jaxrs:serviceBeans>
+            <ref bean="vlabAPI"/>
+        </jaxrs:serviceBeans>
+        <jaxrs:providers>
+            <ref bean="jsonProvider"/>
+            <ref bean="fixProvider"/>
+            <ref bean="exceptionProvider"/>
+            <ref bean="exceptionProvider2"/>
+            <ref bean="exceptionProvider3"/>
+            <ref bean="corsFilter"/>
+        </jaxrs:providers>
+        <jaxrs:features>
+            <ref bean="swagger2Feature"/>
+        </jaxrs:features>
+        <jaxrs:outInterceptors>
+            <ref bean="contentTypeFixInterceptor"/>
+        </jaxrs:outInterceptors>
+    </jaxrs:server>
+
+
+</beans>

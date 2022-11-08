@@ -1,0 +1,23 @@
+{
+  "protocol": "urn:ogc:serviceType:WebMapService:1.1.1:HTTP",
+  "name": "51cbc67c-2e33-4919-923d-9857853982af",
+  "legend": "https://example.com/legend.png",
+  "legendList": [
+    {
+      "type": "square",
+      "color": "#ab2727",
+      "text": "Degradation"
+    },
+    {
+      "type": "square",
+      "color": "#bab099",
+      "text": "Stable"
+    },
+    {
+      "type": "square",
+      "color": "#45a146",
+      "text": "Improvement"
+    }
+  ],
+  "url": "https://example.wms.com/alpha/wms?"
+}

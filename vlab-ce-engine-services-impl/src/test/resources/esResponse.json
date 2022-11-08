@@ -1,0 +1,108 @@
+{
+  "found": true,
+  "_index": "testitindex",
+  "_type": "bpruns",
+  "_source": {
+    "owner": "owner@mail.com",
+    "creationTime": 1548672255592,
+    "inputs": [
+      {
+        "description": "Clumps description",
+        "valueArray": null,
+        "hasDefault": true,
+        "valueSchema": "url",
+        "obligation": true,
+        "valueType": "value",
+        "name": "Clumps",
+        "inputType": "individual",
+        "valueKeyArray": null,
+        "id": "DataObject_1wb6a70",
+        "valueArrayInterpretation": null,
+        "valueKey": null,
+        "value": "http://example.com/folder/P1/Classification/Clumps.kea"
+      },
+      {
+        "description": "Thematic Layers description",
+        "valueArray": [
+          "=http://example.com/folder/P1/Thematic/*"
+        ],
+        "hasDefault": true,
+        "valueSchema": "url",
+        "obligation": true,
+        "valueType": "keyValue",
+        "name": "Thematic Layers",
+        "inputType": "array",
+        "valueKeyArray": [
+          {
+            "label": "All variables",
+            "key": ""
+          },
+          {
+            "label": "Dwaterper",
+            "key": "Dwaterper.kea"
+          },
+          {
+            "label": "waterstt",
+            "key": "waterstt.kea"
+          },
+          {
+            "label": "L3Aquatic",
+            "key": "L3Aquatic.kea"
+          }
+        ],
+        "id": "DataObject_1ogs25p",
+        "valueArrayInterpretation": null,
+        "valueKey": null,
+        "value": null
+      },
+      {
+        "description": "Thematic Layers description",
+        "valueArray": [
+          "L3Aquatic.kea=http://example.com/folder/P2/Thematic/L3Aquatic.kea",
+          "Dwaterper.kea=http://example.com/folder/P2/Thematic/Dwaterper.kea"
+        ],
+        "hasDefault": true,
+        "valueSchema": "url",
+        "obligation": true,
+        "valueType": "keyValue",
+        "name": "Thematic Layers (Changes)",
+        "inputType": "array",
+        "valueKeyArray": [
+          {
+            "label": "All variables",
+            "key": ""
+          },
+          {
+            "label": "Dwaterper",
+            "key": "Dwaterper.kea"
+          },
+          {
+            "label": "waterstt",
+            "key": "waterstt.kea"
+          },
+          {
+            "label": "L3Aquatic",
+            "key": "L3Aquatic.kea"
+          }
+        ],
+        "id": "DataObject_02zxesd",
+        "valueArrayInterpretation": "replace",
+        "valueKey": null,
+        "value": null
+      }
+    ],
+    "name": null,
+    "esCreationTime": "2019-01-28T10:44:15Z",
+    "runid": "00e4d805-bcd5-489d-a1ea-e67a8dbd6889",
+    "publicRun": true,
+    "sharedWith": [
+      "shared1@mail.com",
+      "shared2@mail.com",
+      "shared3@mail.com",
+      "newshare@mail.com"
+    ],
+    "workflowid": "http://eu.essi_lab.core/test/testid0"
+  },
+  "_id": "testitkey",
+  "_version": 3
+}

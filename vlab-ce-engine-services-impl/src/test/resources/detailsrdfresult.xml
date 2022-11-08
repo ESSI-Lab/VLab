@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+        xmlns="http://essi-lab.eu/2020/02/d2k/core#"
+        xmlns:eskos="http://essi-lab.eu/2020/02/d2k/eskos#"
+        xmlns:dce="http://purl.org/dc/elements/"
+        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:sesame="http://www.openrdf.org/schema/sesame#"
+        xmlns:owl="http://www.w3.org/2002/07/owl#"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+        xmlns:fn="http://www.w3.org/2005/xpath-functions#">
+    <rdf:Description rdf:about="http://eu.essi_lab.vlab.core/workflow/id">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">My test</rdfs:label>
+        <rdf:type rdf:resource="http://eu.essi_lab.vlab.core/businessprocess#Business_Process"/>
+        <abstract xmlns="http://purl.org/dc/terms/" rdf:datatype="http://www.w3.org/2001/XMLSchema#string">No description provided</abstract>
+        <dce:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">User Name</dce:creator>
+        <eskos:described_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://s3.amazonaws.com/bname/folder/id.bpmn</eskos:described_by>
+        <eskos:modelDeveloperEmail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">user@example.com</eskos:modelDeveloperEmail>
+        <eskos:modelDeveloperOrg rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ORG</eskos:modelDeveloperOrg>
+        <eskos:under_test rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</eskos:under_test>
+    </rdf:Description>
+</rdf:RDF>

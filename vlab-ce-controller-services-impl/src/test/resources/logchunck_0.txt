@@ -1,0 +1,208 @@
+2021-10-15T15:09:58.441430971Z Completed 256.0 KiB/284.5 KiB (385.7 KiB/s) with 1 file(s) remaining
+Completed 284.5 KiB/284.5 KiB (348.6 KiB/s) with 1 file(s) remaining
+upload: ./legendL3_p1.png to s3://folder/id/legendL3_p1.png
+2021-10-15T15:09:58.556820491Z total 1408
+2021-10-15T15:09:58.558938617Z {"url":"https://test.com/alpha/wms?", "protocol":"urn:ogc:serviceType:WebMapService:1.1.1:HTTP", "name":"id", "legend":"https://s3.amazonaws.com/folder/id/legendL3_p1.png", "legendList": [{"type": "square","color": "#35afff","text": "Artificial Water"},{"type": "square","color": "#007a02","text": "Natural Terrestrial Vegetation"},{"type": "square","color": "#02c013","text": "Natural Aquatic Vegetation"}, {"type": "square","color": "#a8ec1f","text": "Cultivated Terrestrial Vegetation"}, {"type": "square","color": "#4ceee8","text": "Cultivated Aquatic Vegetation"}, {"type": "square","color": "#dc5b67","text": "Artificial Surface"},{"type": "square","color": "#f5ac63","text": "Bare or sparsely vegetated surface"},{"type": "square","color": "#0156cf","text": "Natural Water"}, {"type": "square","color": "#000000","text": "Not classificable (cloudy)"}]}
+2021-10-15T15:09:58.562372386Z [Tiles Generation] Starting 4326 conversion Fri Oct 15 15:09:58 UTC 2021
+2021-10-15T15:09:58.684610047Z Creating output file that is 3946P x 2325L.
+2021-10-15T15:09:58.684636662Z Processing input file /tmp/level3_out_rgb_p2.tif.
+2021-10-15T15:09:58.869392973Z 0...10...20...30...40...50...60...70...80...90...100 - done.
+2021-10-15T15:09:58.872925013Z [Tiles Generation] Completed 4326 conversion Fri Oct 15 15:09:58 UTC 2021
+2021-10-15T15:09:58.874466212Z [Tiles Generation] Starting 4326 png Fri Oct 15 15:09:58 UTC 2021
+2021-10-15T15:09:58.911372798Z Input file size is 3946, 2325
+2021-10-15T15:10:00.071518528Z 0...10...20...30...40...50...60...70...80...90...100 - done.
+2021-10-15T15:10:00.075072075Z [Tiles Generation] Completed 4326 png Fri Oct 15 15:10:00 UTC 2021
+2021-10-15T15:10:00.076723449Z [Tiles Generation] Starting 3857 conversion Fri Oct 15 15:10:00 UTC 2021
+2021-10-15T15:10:00.202392806Z Creating output file that is 3503P x 2950L.
+2021-10-15T15:10:00.202419521Z Processing input file /tmp/level3_out_rgb_p2.tif.
+2021-10-15T15:10:00.397660628Z 0...10...20...30...40...50...60...70...80...90...100 - done.
+2021-10-15T15:10:00.407849034Z [Tiles Generation] Completed 3857 conversion Fri Oct 15 15:10:00 UTC 2021
+2021-10-15T15:10:00.409345448Z [Tiles Generation] Starting 3857 png Fri Oct 15 15:10:00 UTC 2021
+2021-10-15T15:10:00.444721990Z Input file size is 3503, 2950
+2021-10-15T15:10:01.752249530Z 0...10...20...30...40...50...60...70...80...90...100 - done.
+2021-10-15T15:10:01.755714222Z [Tiles Generation] Completed 3857 png Fri Oct 15 15:10:01 UTC 2021
+2021-10-15T15:10:01.760768279Z [Tiles Generation] Starting 4326 tiles Fri Oct 15 15:10:01 UTC 2021
+2021-10-15T15:10:01.864246417Z parallel: Warning: $SHELL not set. Using /bin/sh.
+2021-10-15T15:10:02.816165541Z 0...10...20...30...40...50...60...70..Generating Base Tiles:
+2021-10-15T15:10:02.816186271Z Generating Overview Tiles:
+2021-10-15T15:10:02.816197646Z .80...90...100 - done.
+2021-10-15T15:10:02.835128155Z 0...10...20...30...40...50...60...70..Generating Base Tiles:
+2021-10-15T15:10:02.835149153Z Generating Overview Tiles:
+2021-10-15T15:10:02.835152664Z .80...90...100 - done.
+2021-10-15T15:10:02.918130421Z 0...10...20...30...40...50...60...70...80...Generating Base Tiles:
+2021-10-15T15:10:02.918152120Z Generating Overview Tiles:
+2021-10-15T15:10:02.918155715Z 90...100 - done.
+2021-10-15T15:10:03.391081361Z 0...10...20...30...40...50...60...70...80...90..Generating Base Tiles:
+2021-10-15T15:10:03.391104672Z Generating Overview Tiles:
+2021-10-15T15:10:03.391108378Z .100 - done.
+2021-10-15T15:10:03.501130773Z 0...10...20...30...40...50Generating Base Tiles:
+2021-10-15T15:10:03.501149816Z Generating Overview Tiles:
+2021-10-15T15:10:03.501160403Z ...60...70...80...90...100 - done.
+2021-10-15T15:10:03.522575783Z Generating Base Tiles:
+2021-10-15T15:10:03.522595322Z Generating Overview Tiles:
+2021-10-15T15:10:03.522599623Z 0...10...20...30...40...50...60...70...80...90...100 - done.
+2021-10-15T15:10:03.656822348Z Generating Base Tiles:
+2021-10-15T15:10:03.656847522Z Generating Overview Tiles:
+2021-10-15T15:10:03.656858446Z 0...10...20...30...40...50...60...70...80...90...100 - done.
+2021-10-15T15:10:04.107799804Z Generating Base Tiles:
+2021-10-15T15:10:04.107825137Z Generating Overview Tiles:
+2021-10-15T15:10:04.107828931Z 0...10...20...30...40...50...60...70...80...90...100 - done.
+2021-10-15T15:10:04.111293245Z [model Post-processing] open vlabparams
+2021-10-15T15:10:04.111311632Z [model Post-processing] bbox element found: 7.0128192007541665,45.49148356978592,7.375888712704183,45.705469146054305
+2021-10-15T15:10:04.111315713Z [model Post-processing] latextent: 0.2139855762683851
+2021-10-15T15:10:04.111318720Z [model Post-processing] lonextent: 0.363069511950016
+2021-10-15T15:10:04.111322024Z [model Post-processing] calculating size
+2021-10-15T15:10:04.111324867Z [model Post-processing] latsize: 2328.3770553704544
+2021-10-15T15:10:04.111334055Z [model Post-processing] lonsize: 3950.5593595182086
+2021-10-15T15:10:04.111337143Z sizes - x: 3950.5593595182086 y: 2328.3770553704544
+2021-10-15T15:10:04.111339933Z total size: 9198391.768581195
+2021-10-15T15:10:04.111342767Z Running: seq -w 12 -1 5 | parallel gdal2tiles.py -p geodetic -z {} -n /tmp/layer_4326L3_p2.png /tmp/4326L3_p2
+2021-10-15T15:10:04.118116610Z [Tiles Generation] Completed 4326 tiles Fri Oct 15 15:10:04 UTC 2021
+2021-10-15T15:10:04.119686578Z [Tiles Generation] Starting 3857 tiles Fri Oct 15 15:10:04 UTC 2021
+2021-10-15T15:10:04.222145130Z parallel: Warning: $SHELL not set. Using /bin/sh.
+2021-10-15T15:10:05.152140832Z 0...10...20...30...40...50...60...70..Generating Base Tiles:
+2021-10-15T15:10:05.152167852Z Generating Overview Tiles:
+2021-10-15T15:10:05.152171766Z .80...90...100 - done.
+2021-10-15T15:10:05.184377124Z 0...10...20...30...40...50...60...70..Generating Base Tiles:
+2021-10-15T15:10:05.184398576Z Generating Overview Tiles:
+2021-10-15T15:10:05.184402002Z .80...90...100 - done.
+2021-10-15T15:10:05.407122659Z 0...10...20...30...40...50...60...70...80.Generating Base Tiles:
+2021-10-15T15:10:05.407143369Z Generating Overview Tiles:
+2021-10-15T15:10:05.407147013Z ..90...100 - done.
+2021-10-15T15:10:05.930131790Z 0...10...20...30...40...50...60...70...80...90..Generating Base Tiles:
+2021-10-15T15:10:05.930152193Z Generating Overview Tiles:
+2021-10-15T15:10:05.930156389Z .100 - done.
+2021-10-15T15:10:05.970941711Z 0...10...20...30...40...50Generating Base Tiles:
+2021-10-15T15:10:05.970960626Z Generating Overview Tiles:
+2021-10-15T15:10:05.970964339Z ...60...70...80...90...100 - done.
+2021-10-15T15:10:05.970975597Z Generating Base Tiles:
+2021-10-15T15:10:05.970978675Z Generating Overview Tiles:
+2021-10-15T15:10:05.970981629Z 0...10...20...30...40...50...60...70...80...90...100 - done.
+2021-10-15T15:10:06.149698918Z Generating Base Tiles:
+2021-10-15T15:10:06.149726167Z Generating Overview Tiles:
+2021-10-15T15:10:06.149729919Z 0...10...20...30...40...50...60...70...80...90...100 - done.
+2021-10-15T15:10:06.732330655Z Generating Base Tiles:
+2021-10-15T15:10:06.732377387Z Generating Overview Tiles:
+2021-10-15T15:10:06.732384324Z 0...10...20...30...40...50...60...70...80...90...100 - done.
+2021-10-15T15:10:06.735826518Z [model Post-processing] open vlabparams
+2021-10-15T15:10:06.735844537Z [model Post-processing] bbox element found: 7.0128192007541665,45.49148356978592,7.375888712704183,45.705469146054305
+2021-10-15T15:10:06.735851426Z [model Post-processing] latextent: 0.2139855762683851
+2021-10-15T15:10:06.735868282Z [model Post-processing] lonextent: 0.363069511950016
+2021-10-15T15:10:06.735883620Z [model Post-processing] calculating size
+2021-10-15T15:10:06.735889817Z [model Post-processing] latsize: 2328.3770553704544
+2021-10-15T15:10:06.735895592Z [model Post-processing] lonsize: 3950.5593595182086
+2021-10-15T15:10:06.735901890Z sizes - x: 3950.5593595182086 y: 2328.3770553704544
+2021-10-15T15:10:06.735907479Z total size: 9198391.768581195
+2021-10-15T15:10:06.735913331Z Running: seq -w 12 -1 5 | parallel gdal2tiles.py -z {} -n /tmp/layer_3857L3_p2.png /tmp/3857L3_p2
+2021-10-15T15:10:06.743449665Z [Tiles Generation] Completed 3857 tiles Fri Oct 15 15:10:06 UTC 2021
+2021-10-15T15:10:06.744996677Z [Tiles Generation] Uploading 3857 Fri Oct 15 15:10:06 UTC 2021
+2021-10-15T15:10:08.010274086Z Completed 1.5 KiB/972.2 KiB (4.9 KiB/s) with 43 file(s) remaining
+upload: ../../tmp/3857L3_p2/10/531/657.png to s3://folder/id/3857/10/531/657.png
+2021-10-15T15:10:08.172184007Z Completed 1.5 KiB/972.2 KiB (4.9 KiB/s) with 42 file(s) remaining
+Completed 3.9 KiB/972.2 KiB (8.3 KiB/s) with 42 file(s) remaining
+upload: ../../tmp/3857L3_p2/11/1063/1316.png to s3://folder/id/3857/11/1063/1316.png
+2021-10-15T15:10:08.178752754Z Completed 3.9 KiB/972.2 KiB (8.3 KiB/s) with 41 file(s) remaining
+Completed 5.0 KiB/972.2 KiB (10.5 KiB/s) with 41 file(s) remaining
+upload: ../../tmp/3857L3_p2/10/531/658.png to s3://folder/id/3857/10/531/658.png
+2021-10-15T15:10:08.188057899Z Completed 5.0 KiB/972.2 KiB (10.5 KiB/s) with 40 file(s) remaining
+Completed 5.6 KiB/972.2 KiB (11.5 KiB/s) with 40 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2127/2630.png to s3://folder/id/3857/12/2127/2630.png
+2021-10-15T15:10:08.194773377Z Completed 5.6 KiB/972.2 KiB (11.5 KiB/s) with 39 file(s) remaining
+Completed 7.1 KiB/972.2 KiB (14.5 KiB/s) with 39 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2127/2633.png to s3://folder/id/3857/12/2127/2633.png
+2021-10-15T15:10:08.209934004Z Completed 7.1 KiB/972.2 KiB (14.5 KiB/s) with 38 file(s) remaining
+Completed 15.0 KiB/972.2 KiB (29.6 KiB/s) with 38 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2127/2631.png to s3://folder/id/3857/12/2127/2631.png
+2021-10-15T15:10:08.251416517Z Completed 15.0 KiB/972.2 KiB (29.6 KiB/s) with 37 file(s) remaining
+Completed 39.1 KiB/972.2 KiB (71.2 KiB/s) with 37 file(s) remaining
+upload: ../../tmp/3857L3_p2/11/1064/1315.png to s3://folder/id/3857/11/1064/1315.png
+2021-10-15T15:10:08.265789150Z Completed 39.1 KiB/972.2 KiB (71.2 KiB/s) with 36 file(s) remaining
+Completed 58.1 KiB/972.2 KiB (103.4 KiB/s) with 36 file(s) remaining
+upload: ../../tmp/3857L3_p2/11/1065/1315.png to s3://folder/id/3857/11/1065/1315.png
+2021-10-15T15:10:08.300591903Z Completed 58.1 KiB/972.2 KiB (103.4 KiB/s) with 35 file(s) remaining
+Completed 71.8 KiB/972.2 KiB (119.7 KiB/s) with 35 file(s) remaining
+upload: ../../tmp/3857L3_p2/10/532/657.png to s3://folder/id/3857/10/532/657.png
+2021-10-15T15:10:08.364096009Z Completed 71.8 KiB/972.2 KiB (119.7 KiB/s) with 34 file(s) remaining
+Completed 76.5 KiB/972.2 KiB (115.9 KiB/s) with 34 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2127/2632.png to s3://folder/id/3857/12/2127/2632.png
+2021-10-15T15:10:08.367713733Z Completed 76.5 KiB/972.2 KiB (115.9 KiB/s) with 33 file(s) remaining
+Completed 78.2 KiB/972.2 KiB (118.0 KiB/s) with 33 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2128/2630.png to s3://folder/id/3857/12/2128/2630.png
+2021-10-15T15:10:08.416275474Z Completed 78.2 KiB/972.2 KiB (118.0 KiB/s) with 32 file(s) remaining
+Completed 159.9 KiB/972.2 KiB (223.7 KiB/s) with 32 file(s) remaining
+upload: ../../tmp/3857L3_p2/11/1064/1316.png to s3://folder/id/3857/11/1064/1316.png
+2021-10-15T15:10:08.428243638Z Completed 159.9 KiB/972.2 KiB (223.7 KiB/s) with 31 file(s) remaining
+Completed 237.9 KiB/972.2 KiB (327.4 KiB/s) with 31 file(s) remaining
+upload: ../../tmp/3857L3_p2/11/1065/1316.png to s3://folder/id/3857/11/1065/1316.png
+2021-10-15T15:10:08.451626783Z Completed 237.9 KiB/972.2 KiB (327.4 KiB/s) with 30 file(s) remaining
+Completed 240.4 KiB/972.2 KiB (320.2 KiB/s) with 30 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2129/2630.png to s3://folder/id/3857/12/2129/2630.png
+2021-10-15T15:10:08.476751689Z Completed 240.4 KiB/972.2 KiB (320.2 KiB/s) with 29 file(s) remaining
+Completed 287.1 KiB/972.2 KiB (370.0 KiB/s) with 29 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2128/2632.png to s3://folder/id/3857/12/2128/2632.png
+2021-10-15T15:10:08.515791325Z Completed 287.1 KiB/972.2 KiB (370.0 KiB/s) with 28 file(s) remaining
+Completed 322.9 KiB/972.2 KiB (396.2 KiB/s) with 28 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2129/2631.png to s3://folder/id/3857/12/2129/2631.png
+2021-10-15T15:10:08.556312336Z Completed 322.9 KiB/972.2 KiB (396.2 KiB/s) with 27 file(s) remaining
+Completed 365.9 KiB/972.2 KiB (428.1 KiB/s) with 27 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2128/2633.png to s3://folder/id/3857/12/2128/2633.png
+2021-10-15T15:10:08.559366239Z Completed 365.9 KiB/972.2 KiB (428.1 KiB/s) with 26 file(s) remaining
+Completed 401.5 KiB/972.2 KiB (467.6 KiB/s) with 26 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2128/2631.png to s3://folder/id/3857/12/2128/2631.png
+2021-10-15T15:10:08.621160241Z Completed 401.5 KiB/972.2 KiB (467.6 KiB/s) with 25 file(s) remaining
+Completed 447.7 KiB/972.2 KiB (487.0 KiB/s) with 25 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2130/2632.png to s3://folder/id/3857/12/2130/2632.png
+2021-10-15T15:10:08.625896086Z Completed 447.7 KiB/972.2 KiB (487.0 KiB/s) with 24 file(s) remaining
+Completed 450.0 KiB/972.2 KiB (486.8 KiB/s) with 24 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2130/2630.png to s3://folder/id/3857/12/2130/2630.png
+2021-10-15T15:10:08.646559908Z Completed 450.0 KiB/972.2 KiB (486.8 KiB/s) with 23 file(s) remaining
+Completed 540.1 KiB/972.2 KiB (571.9 KiB/s) with 23 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2129/2632.png to s3://folder/id/3857/12/2129/2632.png
+2021-10-15T15:10:08.702753180Z Completed 540.1 KiB/972.2 KiB (571.9 KiB/s) with 22 file(s) remaining
+Completed 542.1 KiB/972.2 KiB (541.6 KiB/s) with 22 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2131/2630.png to s3://folder/id/3857/12/2131/2630.png
+2021-10-15T15:10:08.707066147Z Completed 542.1 KiB/972.2 KiB (541.6 KiB/s) with 21 file(s) remaining
+Completed 590.9 KiB/972.2 KiB (587.2 KiB/s) with 21 file(s) remaining
+upload: ../../tmp/3857L3_p2/10/532/658.png to s3://folder/id/3857/10/532/658.png
+2021-10-15T15:10:08.735935167Z Completed 590.9 KiB/972.2 KiB (587.2 KiB/s) with 20 file(s) remaining
+Completed 621.2 KiB/972.2 KiB (600.1 KiB/s) with 20 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2130/2631.png to s3://folder/id/3857/12/2130/2631.png
+2021-10-15T15:10:08.743253496Z Completed 621.2 KiB/972.2 KiB (600.1 KiB/s) with 19 file(s) remaining
+Completed 693.4 KiB/972.2 KiB (665.8 KiB/s) with 19 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2130/2633.png to s3://folder/id/3857/12/2130/2633.png
+2021-10-15T15:10:08.762067042Z Completed 693.4 KiB/972.2 KiB (665.8 KiB/s) with 18 file(s) remaining
+Completed 719.7 KiB/972.2 KiB (678.1 KiB/s) with 18 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2131/2631.png to s3://folder/id/3857/12/2131/2631.png
+2021-10-15T15:10:08.773622714Z Completed 719.7 KiB/972.2 KiB (678.1 KiB/s) with 17 file(s) remaining
+Completed 791.9 KiB/972.2 KiB (738.1 KiB/s) with 17 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2129/2633.png to s3://folder/id/3857/12/2129/2633.png
+2021-10-15T15:10:08.816247298Z Completed 791.9 KiB/972.2 KiB (738.1 KiB/s) with 16 file(s) remaining
+Completed 795.1 KiB/972.2 KiB (713.4 KiB/s) with 16 file(s) remaining
+upload: ../../tmp/3857L3_p2/11/1063/1315.png to s3://folder/id/3857/11/1063/1315.png
+2021-10-15T15:10:08.821799269Z Completed 795.1 KiB/972.2 KiB (713.4 KiB/s) with 15 file(s) remaining
+Completed 866.2 KiB/972.2 KiB (773.8 KiB/s) with 15 file(s) remaining
+Completed 914.6 KiB/972.2 KiB (815.9 KiB/s) with 15 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2131/2632.png to s3://folder/id/3857/12/2131/2632.png
+2021-10-15T15:10:08.822797999Z Completed 914.6 KiB/972.2 KiB (815.9 KiB/s) with 14 file(s) remaining
+upload: ../../tmp/3857L3_p2/12/2131/2633.png to s3://folder/id/3857/12/2131/2633.png
+2021-10-15T15:10:08.832187406Z Completed 914.6 KiB/972.2 KiB (815.9 KiB/s) with 13 file(s) remaining
+Completed 915.7 KiB/972.2 KiB (809.6 KiB/s) with 13 file(s) remaining
+upload: ../../tmp/3857L3_p2/6/33/41.png to s3://folder/id/3857/6/33/41.png
+2021-10-15T15:10:08.887739950Z Completed 915.7 KiB/972.2 KiB (809.6 KiB/s) with 12 file(s) remaining
+Completed 918.0 KiB/972.2 KiB (773.4 KiB/s) with 12 file(s) remaining
+upload: ../../tmp/3857L3_p2/7/66/82.png to s3://folder/id/3857/7/66/82.png
+2021-10-15T15:10:08.898991962Z Completed 918.0 KiB/972.2 KiB (773.4 KiB/s) with 11 file(s) remaining
+Completed 918.6 KiB/972.2 KiB (766.6 KiB/s) with 11 file(s) remaining
+upload: ../../tmp/3857L3_p2/5/16/20.png to s3://folder/id/3857/5/16/20.png
+2021-10-15T15:10:08.943013149Z Completed 918.6 KiB/972.2 KiB (766.6 KiB/s) with 10 file(s) remaining
+Completed 919.2 KiB/972.2 KiB (740.1 KiB/s) with 10 file(s) remaining
+upload: ../../tmp/3857L3_p2/8/132/164.png to s3://folder/id/3857/8/132/164.png
+2021-10-15T15:10:08.945628092Z Completed 919.2 KiB/972.2 KiB (740.1 KiB/s) with 9 file(s) remaining
+Completed 925.4 KiB/972.2 KiB (743.4 KiB/s) with 9 file(s) remaining
+upload: ../../tmp/3857L3_p2/8/133/164.png to s3://folder/id/3857/8/133/164.png
+2021-10-15T15:10:08.958243993Z Completed 925.4 KiB/972.2 KiB (743.4 KiB/s) with 8 file(s) remaining
+Completed 926.1 KiB/972.2 KiB (736.4 KiB/s) with 8 file(s) remaining
+upload: ../../tmp/3857L3_p2/9/265/329.png to s3://folder/id/3857/9/265/329.png
+2021-10-15T15:10:08.961946595Z Completed 926.1 KiB/972.2 KiB (736.4 KiB/s) with 7 file(s) remaining
+Completed 926.8 KiB/972.2 KiB (734.9 KiB/s) with 7 file(s) remaining
+upload: ../../tmp/3857L3_p2/9/265/328.png to s3://folder/id/3857/9/265/328.png
