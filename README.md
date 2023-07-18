@@ -180,8 +180,10 @@ operated by different organizations, including:
 <li>Horizon 2020 ECOPOTENTIAL</li>
 <li>Horizon 2020 EOSC-Hub</li>
 <li>Horizon 2020 ERA-PLANET</li>
-<li>ESA EDGE</li>
-<li>ESA GEOSS Platform Plus (GPP)</li>
+<li>ESA DAB4EDGE</li>
+<li>ESA DAB4GPP</li>
+<li>H2020 I-CHANGE</li>
+<li>HE TRIGGER</li>
 </ul>
 
 ### Contributors
