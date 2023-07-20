@@ -190,9 +190,9 @@ operated by different organizations, including:
 
 [VLab development team (contact us)](https://www.uos-firenze.essi-lab.eu/personnel):
 
-- Stefano Nativi (sofware design)
-- Paolo Mazzetti (sofware design)
-- Mattia Santoro (software design, lead-developer)
+- Stefano Nativi (author, sofware design)
+- Paolo Mazzetti (author, sofware design)
+- Mattia Santoro (author, software design, lead-developer)
 - Enrico Boldrini (developer)
 - Fabrizio Papeschi (developer)
 - Roberto Roncella (developer)
